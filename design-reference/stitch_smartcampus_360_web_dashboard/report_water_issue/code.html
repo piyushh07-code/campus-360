@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-surface":"#263142","inverse-on-surface":"#ebf1ff","surface-dim":"#cfdaf1","primary":"#0055ce","on-primary-container":"#ffffff","on-tertiary-fixed":"#002019","secondary-container":"#b4d0ff","on-tertiary-fixed-variant":"#005141","on-secondary-fixed-variant":"#2b486f","tertiary-fixed":"#90f5d8","secondary":"#435f89","tertiary":"#006b57","on-primary-fixed-variant":"#0040a0","surface-bright":"#f9f9ff","on-tertiary":"#ffffff","surface":"#f9f9ff","outline":"#737786","background":"#f9f9ff","surface-variant":"#d8e3fa","error":"#ba1a1a","tertiary-container":"#07866e","secondary-fixed":"#d5e3ff","primary-container":"#2f6fed","on-secondary-fixed":"#001c3b","on-primary":"#ffffff","error-container":"#ffdad6","primary-fixed-dim":"#b1c5ff","on-surface":"#111c2c","on-error":"#ffffff","on-error-container":"#93000a","surface-container-low":"#f0f3ff","tertiary-fixed-dim":"#73d8bd","inverse-primary":"#b1c5ff","on-primary-fixed":"#001847","on-secondary-container":"#3d5982","on-tertiary-container":"#ffffff","surface-container-lowest":"#ffffff","on-surface-variant":"#424654","secondary-fixed-dim":"#acc8f7","surface-container-highest":"#d8e3fa","outline-variant":"#c2c6d7","surface-container-high":"#dee9ff","surface-container":"#e7eeff","on-secondary":"#ffffff","surface-tint":"#0056d0","on-background":"#111c2c","primary-fixed":"#dae2ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","margin":"2rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","space-md":"1rem","gutter":"1.25rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem"},"fontFamily":{"label-md":["Inter"],"headline-lg":["Newsreader"],"display-lg-mobile":["Newsreader"],"metric-val":["Inter"],"label-lg":["Inter"],"display-lg":["Newsreader"],"headline-sm":["Newsreader"],"headline-md":["Newsreader"],"body-sm":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"body-md":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"500"}],"metric-val":["28px",{"lineHeight":"32px","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"48px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md overflow-y-auto"><div class="flex flex-col"><div class="px-space-md pb-space-lg flex items-center gap-space-sm"><img alt="SmartCampus 360 Full Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wte366E2yhap7plNb2kTPOOTc3cYO77KJT5sT_WRlrN5ZmczKaaBtwQdUrSxyUSl5W3ZfyROPvX5-KXEvvNKO-SZMJn5wX0d-_MezshMxhtn1H_yAc2akuV2QcS8Fw-qcG_Uie1wv8pxuuqPHiXek2GfZdTl5ct8LiQiKxFP8xvkyFIuuF7EZpaw94ZJ-i5hKrNMWST3SqAJDFJATHQs1H-GPy_hp_1MH5TUz4ZfyBtGT-wuch_0eAdQ"/><div class="flex flex-col"><span class="font-label-lg text-label-lg text-secondary leading-none">SmartCampus 360</span><span class="font-label-sm text-label-sm text-outline mt-space-xs">Intelligence &amp; Resource Hub</span></div></div><nav class="flex flex-col gap-space-md px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg shadow-sm"><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Core</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="study-planner" href="#"><span class="font-label-md text-label-md">Study Planner</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="syllabus-tracker" href="#"><span class="font-label-md text-label-md">Syllabus Tracker</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="academic-calendar" href="#"><span class="font-label-md text-label-md">Academic Calendar</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-study-assistant" href="#"><span class="font-label-md text-label-md">AI Study Assistant</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="focus-timer" href="#"><span class="font-label-md text-label-md">Focus Timer</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Sustainability</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="waterwatch" href="#"><span class="font-label-md text-label-md">WaterWatch</span></a><a aria-current="page" class="flex items-center px-space-sm py-space-xs rounded-lg transition-all bg-primary-container text-on-primary-container font-label-lg shadow-sm" data-path="report-water-issue" href="#"><span class="font-label-md text-label-md">Report Water Issue</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="my-reports" href="#"><span class="font-label-md text-label-md">My Reports</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">System</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="font-label-md text-label-md">Analytics</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="font-label-md text-label-md">Settings</span></a></div></nav></div><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[20px]">nest_eco_leaf</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">Campus Green Tier</span><span class="font-label-sm text-[10px] text-outline">Tier A+ Active</span></div></div><span class="font-label-sm text-label-sm text-tertiary">98%</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-margin"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-10 pr-20 bg-surface-container-low rounded-lg text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search modules, schedules, library telemetry..." type="text"/><div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-0.5 px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]"><span>⌘</span><span>K</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed"><span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span><span class="font-label-sm text-label-sm font-semibold">Dormitory Conservation: -18% gal</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-outline">BioEng '26</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZs8UK0Nfgp2OCbiO3qnhBgGJ-mN-1SR-GGDTfpcmgY2ivEyRnCDrr2x92hP2CPPwBWQ4eBt5mu1dSquq1bQ6LE7bhst1BQrPeSB62a--7pMAkC4SgtLUftlNY9FSMzRQx8G81Fs9CqExRrOLvKNMt26HbJ3DvOtTr_TSMdLrr7PNbPPHeXTdBgF0lPf_21qoVKGtXwqTq91ipqSI1KAUC83tdgre7xbMXbEYllJFlyDRQq1UUYI0h"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-margin py-space-lg w-full"><div class="flex flex-col w-full">
+<!-- Page Context & Title Area -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Breadcrumbs & Status Tag -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Sustainability Workstation</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-medium">WaterWatch</span>
+<span class="text-outline">/</span>
+<span class="text-tertiary font-semibold">New Incident Submission</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-medium text-tertiary">Demo Dispatch Mode</span>
+<span class="text-outline text-[10px]">— Simulated facilities routing</span>
+</div>
+</div>
+<!-- Editorial Headline & Intro -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-space-xs">
+<div class="max-w-2xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Report Campus Water Issue</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+          Help campus facilities resolve leaks, overflows, and supply faults promptly. Submissions generate an actionable service order for building maintenance dispatch teams.
+        </p>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>Software Ticketing Protocol v3.4</span>
+</div>
+</div>
+</div>
+<!-- Main Grid: 2-Column Desktop Layout (~65% Form / ~35% Reference Rail) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-gutter items-start">
+<!-- LEFT COLUMN: Multi-Step Report Form (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Interactive State Simulator Control Bar -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">tune</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Interactive Prototype Modes:</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-tertiary text-on-tertiary transition-all" id="btn-mode-normal" onclick="switchFormState('normal')">Normal Entry</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" id="btn-mode-error" onclick="switchFormState('error')">Validation Error</button>
+<button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" id="btn-mode-success" onclick="switchFormState('success')">Submitted View</button>
+</div>
+</div>
+<!-- Live Error Banner (Hidden by default, shown in error mode) -->
+<div class="hidden bg-error-container text-on-error-container p-space-md rounded-lg shadow-sm flex items-start gap-3" id="error-summary-banner">
+<span class="material-symbols-outlined text-error text-[22px] shrink-0 mt-0.5">error</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-error">Submission Halted — Incomplete Information</span>
+<span class="font-body-sm text-body-sm mt-0.5 text-on-error-container/90">Please specify a specific campus building location and select the physical severity before dispatching this work order.</span>
+</div>
+</div>
+<!-- Main Submission Card -->
+<form class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xl" id="water-report-form" onsubmit="event.preventDefault(); switchFormState('success');">
+<!-- STEP 1: Issue Classification -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Issue Classification</h2>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">* Required Field</span>
+</div>
+<!-- Radio Pill Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-sm" id="classification-grid">
+<!-- Type 1: Leaking Tap (Default Selected) -->
+<label class="cursor-pointer group">
+<input checked="" class="peer sr-only" name="issue_type" onchange="updateRadioStyles()" type="radio" value="leaking_tap"/>
+<div class="h-full p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex flex-col gap-1.5 shadow-sm relative">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-tertiary">water_drop</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[18px] opacity-100 peer-checked:opacity-100" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="mt-1">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Leaking Tap / Faucet</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Sinks, wash basins, lab faucets dripping continually</p>
+</div>
+</div>
+</label>
+<!-- Type 2: Overflowing Tank -->
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="issue_type" onchange="updateRadioStyles()" type="radio" value="overflow"/>
+<div class="h-full p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex flex-col gap-1.5 shadow-sm relative">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">tsunami</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] opacity-20 peer-checked:text-tertiary peer-checked:opacity-100">check_circle</span>
+</div>
+<div class="mt-1">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Overflowing Tank / Drain</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Basement drains backing up, exterior rain collectors</p>
+</div>
+</div>
+</label>
+<!-- Type 3: Broken Pipe (Critical Attention) -->
+<label class="cursor-pointer group sm:col-span-2 md:col-span-1">
+<input class="peer sr-only" name="issue_type" onchange="updateRadioStyles()" type="radio" value="broken_pipe"/>
+<div class="h-full p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex flex-col gap-1.5 shadow-sm relative">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-error">plumbing</span>
+</div>
+<span class="px-1.5 py-0.5 rounded text-[9px] font-label-sm font-bold uppercase tracking-wider bg-error text-on-error">High Urgency</span>
+</div>
+<div class="mt-1">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Broken Pipe / Main</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Active bursts, structural wall seepage, pooling water</p>
+</div>
+</div>
+</label>
+<!-- Type 4: No Water Supply -->
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="issue_type" onchange="updateRadioStyles()" type="radio" value="no_supply"/>
+<div class="h-full p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex flex-col gap-1.5 shadow-sm relative">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">water_bottle_large</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] opacity-20 peer-checked:text-tertiary peer-checked:opacity-100">check_circle</span>
+</div>
+<div class="mt-1">
+<div class="font-label-md text-label-md font-semibold text-on-surface">No Water Supply</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Total loss of pressure, dry faucets across a wing</p>
+</div>
+</div>
+</label>
+<!-- Type 5: Other Maintenance -->
+<label class="cursor-pointer group sm:col-span-2">
+<input class="peer sr-only" name="issue_type" onchange="updateRadioStyles()" type="radio" value="other"/>
+<div class="h-full p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex flex-col gap-1.5 shadow-sm relative">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">assignment</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] opacity-20 peer-checked:text-tertiary peer-checked:opacity-100">check_circle</span>
+</div>
+<div class="mt-1">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Other Infrastructure Issue</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Sputtering lines, discolored brown/cloudy water, fountain filters, or irrigation timers</p>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 2: Location & Urgency -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Location &amp; Urgency</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Step 2 of 4</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Building Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1" for="campus-building">
+                Campus Building <span class="text-tertiary font-bold">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 px-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20 appearance-none pr-9" id="campus-building">
+<option disabled="" selected="" value="">Select facility or zone...</option>
+<option value="eng_hall">Engineering Hall (West Campus)</option>
+<option value="sci_complex">Science Complex &amp; Labs</option>
+<option value="res_north">North Student Residences</option>
+<option value="main_lib">Main Academic Library (Floors 1-5)</option>
+<option value="union">Student Union &amp; Dining Atrium</option>
+<option value="athletics">Athletics Center &amp; Natatorium</option>
+<option value="dining_commons">Dining Commons (Central Kitchen)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<span class="hidden text-error font-label-sm text-label-sm mt-0.5" id="building-error-msg">Please specify the building location before submitting.</span>
+</div>
+<!-- Specific Spot Details -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1" for="room-details">
+                Specific Floor, Room, or Landmark <span class="text-tertiary font-bold">*</span>
+</label>
+<input class="w-full h-11 px-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" id="room-details" placeholder="e.g. 2nd Floor, Restroom opposite Room 204" type="text" value="2nd Floor, Restroom opposite Room 204"/>
+<span class="text-on-surface-variant font-label-sm text-[11px]">Include door numbers, column letters, or directional landmarks.</span>
+</div>
+</div>
+<!-- Urgency Level Selectors -->
+<div class="flex flex-col gap-2 mt-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Incident Urgency Tier</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Tier 1: Routine -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="severity" type="radio" value="low"/>
+<div class="p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Routine / Low</span>
+<span class="font-label-sm text-[10px] text-outline">Slow drip, no pool risk</span>
+</div>
+</div>
+</label>
+<!-- Tier 2: Urgent (Selected) -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="severity" type="radio" value="urgent"/>
+<div class="p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Urgent / Active Drip</span>
+<span class="font-label-sm text-[10px] text-tertiary font-medium">Constant loss (&gt;1 gal/hr)</span>
+</div>
+</div>
+</label>
+<!-- Tier 3: Emergency -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="severity" type="radio" value="emergency"/>
+<div class="p-space-sm rounded-lg bg-surface-container-low peer-checked:bg-surface-container-high transition-all flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Emergency Risk</span>
+<span class="font-label-sm text-[10px] text-error font-medium">Active structural flood</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- STEP 3: Description & Context -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Observation Notes &amp; Timeline</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Step 3 of 4</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-semibold text-on-surface" for="notes-textarea">
+                Detailed Observation Notes
+              </label>
+<span class="font-label-sm text-label-sm text-outline" id="char-counter">142 / 500 characters</span>
+</div>
+<textarea class="w-full p-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 leading-relaxed" id="notes-textarea" oninput="updateCharCount(this)" placeholder="Describe what you observed: drip cadence, pooling water depth, sound of running water behind tiles, unusual odors..." rows="3">Cold water tap in the third stall from entrance is dripping steadily at about 1 drop per second. Small puddle forming around base of basin.</textarea>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface">First Observed Timestamp</label>
+<div class="h-11 px-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm flex items-center justify-between">
+<span>Today, Oct 16, 2024 — 10:15 AM</span>
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Reporter Affiliation</label>
+<div class="h-11 px-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm flex items-center justify-between">
+<span class="font-medium text-secondary">Student (Elena Vance — BioEng '26)</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 4: Photo / Media Upload Control -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Photo Verification (Optional)</h2>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Recommended for Fast Triage</span>
+</div>
+<!-- Drag and Drop Box -->
+<div class="bg-surface-container-low hover:bg-surface-container-high/60 transition-all rounded-xl p-space-lg flex flex-col items-center justify-center text-center cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest text-tertiary flex items-center justify-center mb-2 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">add_a_photo</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Drag and drop photo of the issue or click to browse</span>
+<p class="font-body-sm text-body-sm text-outline mt-1 max-w-md">
+              Supported formats: PNG, JPG, HEIC up to 15MB. Helps facilities technicians identify needed replacement valves before heading to site.
+            </p>
+</div>
+<!-- Mock Attached Photo Attachment Pill -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between gap-space-sm shadow-sm" id="mock-photo-attachment">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded bg-surface-container-highest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of a stainless steel institutional faucet dripping clean water into a commercial white porcelain sink with minor pooling around the chrome ring in a university laboratory washroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlavP5rao8EWy9YuPyEMm-K3Ccfq5SdbCMg08jhoV_q6Uv_vTjLvUdZUDz-IZfSwMpEnMzRDLOYVZm2L3HIYphoUvmO1EoOSoG64pdfpRCoXJniqGxgAkrBjW5Ez3-IOpqqTS5N0IV_d6fQxLGDy5uu5aGu6ALZPi5fe6-FGkagq1Yuo_Y4P4aPR9htrHXO3aH4cAvVhugzadR1xIWweMNIXy5lfECAnP3I9QdLfRVNlFjYzDHCibT"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">leak_photo_engineering_hall.jpg</span>
+<div class="flex items-center gap-2 text-outline font-label-sm text-[11px]">
+<span>2.4 MB</span>
+<span>•</span>
+<span class="text-tertiary font-medium">Ready for upload packet</span>
+</div>
+</div>
+</div>
+<button class="p-1.5 rounded hover:bg-surface-container-highest text-outline hover:text-error transition-colors" onclick="document.getElementById('mock-photo-attachment').classList.add('hidden')" title="Remove attachment" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- STEP 5 & 6: Privacy Disclosure & Action Bar -->
+<div class="pt-space-md flex flex-col gap-space-md">
+<!-- Institutional Privacy Notice -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">privacy_tip</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="font-semibold text-on-surface">Privacy Notice:</strong> Details submitted in this report (including room location, timestamps, and optional images) are utilized exclusively by Campus Facilities &amp; Maintenance to dispatch technicians and maintain campus physical health. Your Student ID is not publicly broadcasted on collective dashboards.
+            </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-2 order-2 sm:order-1">
+<button class="px-space-md py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-label-lg text-label-lg transition-colors" onclick="resetForm()" type="button">
+                Reset Draft
+              </button>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto order-1 sm:order-2">
+<button class="w-full sm:w-auto px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors" type="button">
+                Save Draft
+              </button>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg text-label-lg shadow-sm hover:shadow transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Submit Water Issue Report</span>
+</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+<!-- RIGHT COLUMN: Companion Reference & Live Preview Rail (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- CARD A: Live Ticket State Demonstration Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm relative overflow-hidden" id="live-ticket-card">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Triage Ticket Pipeline</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold" id="ticket-badge">Pending Form Submission</span>
+</div>
+<!-- Success Preview Section -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm" id="ticket-content">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Ticket #W-1093 Created</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Engineering Facilities Division</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 py-1">
+<div class="flex items-center justify-between text-[11px] font-label-sm">
+<span class="text-outline">Assigned Zone:</span>
+<span class="text-on-surface font-medium">Engineering Hall — 2F</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-sm">
+<span class="text-outline">Priority Queue:</span>
+<span class="text-tertiary font-bold">Urgent (Tier 2)</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-sm">
+<span class="text-outline">Est. Triage Window:</span>
+<span class="text-on-surface font-medium">2 to 4 hours</span>
+</div>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" href="#">
+<span>Track in My Reports</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<span class="font-label-sm text-[10px] text-outline">Ref: FAC-2024-ENG9</span>
+</div>
+</div>
+<p class="font-body-sm text-[11px] text-outline leading-tight">
+          Submitting creates an immutable campus facility event log. Technicians receive digital push manifests directly on university work-pads.
+        </p>
+</div>
+<!-- CARD B: Emergency Contact & Quick Action Protocol -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-error">fmd_bad</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Active Flooding Emergency?</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Do not rely on regular ticket queues if standing water poses an electrical safety hazard or ceiling collapse risk.
+        </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider font-semibold">Campus Facilities 24/7 Hotline</span>
+<div class="flex items-center justify-between">
+<span class="font-metric-val text-headline-sm text-error font-bold tracking-tight">(555) 019-3600</span>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-2 py-0.5 rounded font-bold">Ext 4</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[16px] shrink-0 mt-0.5">valve</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Emergency Shutoff Valves</span>
+<span class="font-body-sm text-[11px] text-outline leading-tight">Usually located at the pipe base beneath the sink fixture or behind the marked red service access hatch in main hallways.</span>
+</div>
+</div>
+</div>
+<!-- CARD C: Facilities Resolution Timeline Protocol -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Facilities Resolution Flow</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">3-Step Lifecycle</span>
+</div>
+<!-- Step List -->
+<div class="flex flex-col gap-space-md relative pl-2">
+<!-- Item 1 -->
+<div class="flex items-start gap-3 relative">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0 text-[11px] font-bold font-label-sm z-10">
+              1
+            </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Logged &amp; Triaged</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">
+                Work order classified, duplicate notifications coalesced, and physical building zone notified.
+              </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-3 relative">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 text-[11px] font-bold font-label-sm z-10">
+              2
+            </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Technician Dispatched</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">
+                Facilities trade specialist assigned with replacement hardware and diagnostic toolkit.
+              </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-3 relative">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 text-[11px] font-bold font-label-sm z-10">
+              3
+            </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Resolution &amp; WaterWatch Audit</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">
+                Fixture repaired, work order signed off, and student incident tracking updated to Resolved status.
+              </p>
+</div>
+</div>
+</div>
+<!-- Campus Environmental Metric Footnote -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">nest_eco_leaf</span>
+<span>Avg. Resolution Turnaround</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">3.8 Hours</span>
+</div>
+</div>
+<!-- Historical Campus Context Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Campus Conservation Context</span>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-tertiary">water_damage</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">178,000 Gallons Saved in 2024</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Through early reporting of dripping fixtures by students and facility monitors.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function updateRadioStyles() {
+    // Handled natively by peer classes in Tailwind
+  }
+
+  function updateCharCount(el) {
+    const counter = document.getElementById('char-counter');
+    if (counter) {
+      counter.innerText = `${el.value.length} / 500 characters`;
+    }
+  }
+
+  function switchFormState(mode) {
+    const banner = document.getElementById('error-summary-banner');
+    const buildingSelect = document.getElementById('campus-building');
+    const buildingError = document.getElementById('building-error-msg');
+    const ticketCard = document.getElementById('live-ticket-card');
+    const ticketBadge = document.getElementById('ticket-badge');
+    const ticketContent = document.getElementById('ticket-content');
+
+    const btnNormal = document.getElementById('btn-mode-normal');
+    const btnError = document.getElementById('btn-mode-error');
+    const btnSuccess = document.getElementById('btn-mode-success');
+
+    // Reset buttons
+    [btnNormal, btnError, btnSuccess].forEach(btn => {
+      btn.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all';
+    });
+
+    if (mode === 'normal') {
+      btnNormal.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-tertiary text-on-tertiary transition-all';
+      banner.classList.add('hidden');
+      buildingSelect.classList.remove('bg-error-container', 'text-on-error-container');
+      buildingSelect.classList.add('bg-surface-container-low');
+      buildingError.classList.add('hidden');
+      
+      ticketBadge.className = 'px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold';
+      ticketBadge.innerText = 'Pending Form Submission';
+      ticketContent.classList.remove('ring-2', 'ring-tertiary');
+    } 
+    else if (mode === 'error') {
+      btnError.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-error text-on-error transition-all';
+      banner.classList.remove('hidden');
+      buildingSelect.classList.remove('bg-surface-container-low');
+      buildingSelect.classList.add('bg-error-container', 'text-on-error-container');
+      buildingSelect.value = '';
+      buildingError.classList.remove('hidden');
+      
+      ticketBadge.className = 'px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold';
+      ticketBadge.innerText = 'Submission Blocked';
+    } 
+    else if (mode === 'success') {
+      btnSuccess.className = 'px-2.5 py-1 rounded font-label-sm text-label-sm bg-tertiary text-on-tertiary transition-all';
+      banner.classList.add('hidden');
+      buildingSelect.classList.remove('bg-error-container', 'text-on-error-container');
+      buildingSelect.classList.add('bg-surface-container-low');
+      if (!buildingSelect.value) buildingSelect.value = 'eng_hall';
+      buildingError.classList.add('hidden');
+
+      ticketBadge.className = 'px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-[11px] font-semibold animate-bounce';
+      ticketBadge.innerText = 'Verified Active Ticket';
+      ticketContent.classList.add('ring-2', 'ring-tertiary');
+    }
+  }
+
+  function resetForm() {
+    document.getElementById('water-report-form').reset();
+    switchFormState('normal');
+    document.getElementById('mock-photo-attachment').classList.remove('hidden');
+    updateCharCount(document.getElementById('notes-textarea'));
+  }
+</script></main></div></body></html>

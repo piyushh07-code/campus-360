@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#b1c5ff","error":"#ba1a1a","on-error-container":"#93000a","tertiary-fixed":"#90f5d8","surface-container-low":"#f0f3ff","primary-fixed":"#dae2ff","outline":"#737786","on-primary-fixed-variant":"#0040a0","surface-container-highest":"#d8e3fa","on-tertiary-container":"#ffffff","on-tertiary":"#ffffff","inverse-on-surface":"#ebf1ff","surface-dim":"#cfdaf1","tertiary-fixed-dim":"#73d8bd","inverse-surface":"#263142","on-primary-fixed":"#001847","error-container":"#ffdad6","outline-variant":"#c2c6d7","background":"#f9f9ff","surface-container-lowest":"#ffffff","surface-variant":"#d8e3fa","inverse-primary":"#b1c5ff","on-tertiary-fixed":"#002019","on-primary-container":"#ffffff","on-tertiary-fixed-variant":"#005141","tertiary-container":"#07866e","on-background":"#111c2c","on-secondary-fixed":"#001c3b","secondary-container":"#b4d0ff","primary-container":"#2f6fed","on-primary":"#ffffff","on-surface-variant":"#424654","secondary-fixed":"#d5e3ff","surface-bright":"#f9f9ff","surface":"#f9f9ff","secondary":"#435f89","on-secondary-container":"#3d5982","on-secondary":"#ffffff","on-secondary-fixed-variant":"#2b486f","on-error":"#ffffff","secondary-fixed-dim":"#acc8f7","surface-container":"#e7eeff","primary":"#0055ce","on-surface":"#111c2c","tertiary":"#006b57","surface-container-high":"#dee9ff","surface-tint":"#0056d0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-md":"1rem","margin":"2rem","gutter":"1.25rem","space-xs":"0.25rem"},"fontFamily":{"headline-md":["Newsreader"],"headline-sm":["Newsreader"],"headline-lg":["Newsreader"],"label-sm":["Inter"],"metric-val":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg-mobile":["Newsreader"],"display-lg":["Newsreader"],"label-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"metric-val":["28px",{"lineHeight":"32px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"display-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"500"}],"display-lg":["40px",{"lineHeight":"48px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"18px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md overflow-y-auto"><div class="flex flex-col"><div class="px-space-md pb-space-lg flex items-center gap-space-sm"><img alt="SmartCampus 360 Full Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wte366E2yhap7plNb2kTPOOTc3cYO77KJT5sT_WRlrN5ZmczKaaBtwQdUrSxyUSl5W3ZfyROPvX5-KXEvvNKO-SZMJn5wX0d-_MezshMxhtn1H_yAc2akuV2QcS8Fw-qcG_Uie1wv8pxuuqPHiXek2GfZdTl5ct8LiQiKxFP8xvkyFIuuF7EZpaw94ZJ-i5hKrNMWST3SqAJDFJATHQs1H-GPy_hp_1MH5TUz4ZfyBtGT-wuch_0eAdQ"/><div class="flex flex-col"><span class="font-label-lg text-label-lg text-secondary leading-none">SmartCampus 360</span><span class="font-label-sm text-label-sm text-outline mt-space-xs">Intelligence &amp; Resource Hub</span></div></div><nav class="flex flex-col gap-space-md px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg shadow-sm"><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Core</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="student-dashboard" href="#"><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="study-planner" href="#"><span class="font-label-md text-label-md">Study Planner</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="syllabus-tracker" href="#"><span class="font-label-md text-label-md">Syllabus Tracker</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="academic-calendar" href="#"><span class="font-label-md text-label-md">Academic Calendar</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-study-assistant" href="#"><span class="font-label-md text-label-md">AI Study Assistant</span></a><a aria-current="page" class="flex items-center px-space-sm py-space-xs rounded-lg transition-all bg-primary-container text-on-primary-container font-label-lg shadow-sm" data-path="focus-timer" href="#"><span class="font-label-md text-label-md">Focus Timer</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Sustainability</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="waterwatch" href="#"><span class="font-label-md text-label-md">WaterWatch</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="my-reports" href="#"><span class="font-label-md text-label-md">My Reports</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">System</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="font-label-md text-label-md">Analytics</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="font-label-md text-label-md">Settings</span></a></div></nav></div><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[20px]">nest_eco_leaf</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">Campus Green Tier</span><span class="font-label-sm text-[10px] text-outline">Tier A+ Active</span></div></div><span class="font-label-sm text-label-sm text-tertiary">98%</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-margin"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-10 pr-20 bg-surface-container-low rounded-lg text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search modules, schedules, library telemetry..." type="text"/><div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-0.5 px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]"><span>⌘</span><span>K</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed"><span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span><span class="font-label-sm text-label-sm font-semibold">Dormitory Conservation: -18% gal</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-outline">BioEng '26</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZs8UK0Nfgp2OCbiO3qnhBgGJ-mN-1SR-GGDTfpcmgY2ivEyRnCDrr2x92hP2CPPwBWQ4eBt5mu1dSquq1bQ6LE7bhst1BQrPeSB62a--7pMAkC4SgtLUftlNY9FSMzRQx8G81Fs9CqExRrOLvKNMt26HbJ3DvOtTr_TSMdLrr7PNbPPHeXTdBgF0lPf_21qoVKGtXwqTq91ipqSI1KAUC83tdgre7xbMXbEYllJFlyDRQq1UUYI0h"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-margin py-space-lg w-full"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Header & Breadcrumb Context Area -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<span>Academic Workstation</span>
+<span>•</span>
+<span>Cognitive Focus Engine</span>
+<span>•</span>
+<span class="text-primary font-semibold">Deep Work Protocol</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Focus Timer &amp; Active Recall Sprint
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Structure high-intensity study intervals, eliminate multitasking, and link completed focus cycles directly to your course deliverables.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-sm self-start md:self-auto">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">timer</span>
+<div class="flex flex-col leading-tight">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant">Today's Target: 4.0 hrs</span>
+<span class="font-label-md text-label-md font-bold text-on-secondary-fixed">2.5 hrs completed • 62%</span>
+</div>
+</div>
+</div>
+<!-- Top Session Configuration Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Course / Task Selector -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-sm flex-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider whitespace-nowrap" for="task-select">
+        Link to Active Course / Task:
+      </label>
+<div class="relative w-full sm:max-w-md">
+<select class="w-full h-10 pl-3 pr-9 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer" id="task-select">
+<option selected="">BioEng 204 — Eco-Sensor IoT Node Design Submission (Due Oct 18)</option>
+<option>Chem 140B — Reaction Enthalpy Synthesis Problem Set 4</option>
+<option>BioEng 210 — Cellular Signal Transduction Literature Review</option>
+<option>MechEng 102 — Hydrodynamic Micro-Turbine Modeling</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold whitespace-nowrap">
+        High Priority • 2h estimated
+      </span>
+</div>
+<!-- Mode Selectors & Ambient Telemetry -->
+<div class="flex flex-wrap items-center gap-space-sm justify-between xl:justify-end">
+<!-- Mode Toggle Buttons -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg gap-1" id="mode-selector-group">
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md transition-all bg-primary-container text-on-primary-container shadow-sm font-semibold" id="mode-25" onclick="setTimerDuration(25, 'Standard Sprint', this)">
+          Standard Sprint (25m)
+        </button>
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="mode-50" onclick="setTimerDuration(50, 'Deep Immersion', this)">
+          Deep Immersion (50m)
+        </button>
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="mode-5" onclick="setTimerDuration(5, 'Short Rest', this)">
+          Short Rest (5m)
+        </button>
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="mode-15" onclick="setTimerDuration(15, 'Long Rest', this)">
+          Long Rest (15m)
+        </button>
+</div>
+<!-- Ambient Pod Telemetry -->
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim transition-all text-left">
+<span class="material-symbols-outlined text-tertiary text-[18px]">headphones</span>
+<span class="font-label-sm text-label-sm font-semibold truncate max-w-[210px]">Quiet Pod: Low Brown Noise • 432Hz</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">graphic_eq</span>
+</button>
+</div>
+</div>
+<!-- Hero Focus Timer Centerpiece Card -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-xl shadow-md flex flex-col items-center justify-center overflow-hidden">
+<!-- Subtle Background Ambient Glow -->
+<div class="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col items-center text-center max-w-xl z-10 w-full">
+<!-- Status Chip -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-semibold text-on-surface" id="active-sprint-label">CURRENT SPRINT: BioEng 204 • Sensor Bridge Schematic Derivation</span>
+</div>
+<!-- Circular Timer Display Component -->
+<div class="relative w-72 h-72 sm:w-80 sm:h-80 flex items-center justify-center my-space-xs">
+<!-- SVG Progress Ring Track -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 260 260">
+<circle class="text-surface-container-high" cx="130" cy="130" fill="transparent" r="112" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary transition-all duration-1000 ease-linear" cx="130" cy="130" fill="transparent" id="timer-progress-ring" r="112" stroke="currentColor" stroke-dasharray="703.71" stroke-dashoffset="91.48" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<!-- Inner Metric Timer Face -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none select-none">
+<span class="font-metric-val text-[68px] leading-none tracking-tight font-bold text-on-surface" id="timer-display">
+            21:42
+          </span>
+<span class="font-label-sm text-label-sm text-outline mt-2 tracking-widest uppercase" id="progress-percent">
+            13% Elapsed • Interval 3 of 4
+          </span>
+<div class="flex items-center gap-1.5 mt-2 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-semibold">
+<span class="material-symbols-outlined text-[13px] text-tertiary">energy_savings_leaf</span>
+            Eco-Sync Active
+          </div>
+</div>
+</div>
+<!-- Primary Accessible Controls Bar -->
+<div class="flex flex-wrap items-center justify-center gap-space-sm mt-space-md">
+<button class="flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm hover:bg-primary transition-all" id="btn-toggle" onclick="toggleTimer()">
+<span class="material-symbols-outlined text-[20px]" id="toggle-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+<span id="toggle-text">Pause Sprint</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all" onclick="resetTimer()">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Reset</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all" onclick="skipToBreak()">
+<span class="material-symbols-outlined text-[18px]">skip_next</span>
+<span>Skip to Break</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md hover:bg-surface-container-high transition-all" id="btn-chime" onclick="toggleAudioChime()" title="Toggle Sound Feedback">
+<span class="material-symbols-outlined text-[18px]" id="chime-icon">notifications_active</span>
+<span class="hidden sm:inline font-semibold">Chime Enabled</span>
+</button>
+</div>
+<!-- Keyboard Shortcuts Context Strip -->
+<div class="flex items-center justify-center gap-space-md text-outline font-label-sm text-label-sm mt-space-lg pt-space-sm">
+<div class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface text-[10px] font-bold">Space</kbd>
+<span>Start / Pause</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface text-[10px] font-bold">R</kbd>
+<span>Reset</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface text-[10px] font-bold">M</kbd>
+<span>Switch Mode</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Today's Focus Metrics Row (4 Balanced Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Completed Sessions -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Completed Sprints</span>
+<span class="p-1.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-metric-val text-metric-val text-on-surface">5 Sprints</div>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-semibold mt-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+2 vs. yesterday (125 min total)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+<!-- Metric 2: Total Focus Time -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Total Focus Time</span>
+<span class="p-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">timelapse</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-metric-val text-metric-val text-on-surface">2h 30m</div>
+<div class="text-outline font-label-sm text-label-sm mt-1">
+          Target: 4h 00m daily objective (62%)
+        </div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 62.5%;"></div>
+</div>
+</div>
+<!-- Metric 3: Current Streak -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Discipline Streak</span>
+<span class="p-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-metric-val text-metric-val text-on-surface">6 Days</div>
+<div class="text-tertiary font-label-sm text-label-sm font-semibold mt-1">
+          Top 8% in BioEngineering Cohort
+        </div>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-high"></span>
+</div>
+</div>
+<!-- Metric 4: WaterWatch Conservation Sync -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">WaterWatch Sync</span>
+<span class="p-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-metric-val text-metric-val text-tertiary">Dorm Resync</div>
+<div class="text-outline font-label-sm text-label-sm mt-1 leading-snug">
+          2 deep focus blocks logged prior to peak dormitory grid draw
+        </div>
+</div>
+<div class="flex items-center gap-1 text-[11px] font-label-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+<span>+40 Green Merit pts awarded</span>
+</div>
+</div>
+</div>
+<!-- Bottom Grid: Analytics & Hourly Distribution alongside Today's Log -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left Column (7 cols): Weekly Focus Distribution & Analytics -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+            Weekly Focus Summary &amp; Hourly Distribution
+          </h2>
+<span class="font-label-sm text-label-sm text-outline">
+            Comparative telemetry for Week 8 • Active Recall Index
+          </span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-primary text-[16px]">psychology</span>
+<span>Peak Focus: 1:00 PM – 3:30 PM</span>
+</div>
+</div>
+<!-- Weekly Chart Visualization (Mon-Fri + Weekend) -->
+<div class="flex flex-col gap-space-sm">
+<div class="h-44 w-full flex items-end justify-between gap-3 px-2 pt-6 pb-2">
+<!-- Mon -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
+<span class="font-label-sm text-[10px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">3.5h</span>
+<div class="w-full max-w-[36px] bg-secondary-container rounded-t-lg transition-all group-hover:bg-primary-container" style="height: 68%;"></div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Mon</span>
+</div>
+<!-- Tue -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
+<span class="font-label-sm text-[10px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">4.2h</span>
+<div class="w-full max-w-[36px] bg-secondary-container rounded-t-lg transition-all group-hover:bg-primary-container" style="height: 82%;"></div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Tue</span>
+</div>
+<!-- Wed (Today) -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end group relative">
+<span class="font-label-sm text-[10px] text-primary font-bold">2.5h</span>
+<div class="w-full max-w-[36px] bg-primary rounded-t-lg shadow-sm" style="height: 48%;"></div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Wed*</span>
+</div>
+<!-- Thu -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
+<span class="font-label-sm text-[10px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">5.1h (proj)</span>
+<div class="w-full max-w-[36px] bg-surface-container-high rounded-t-lg transition-all group-hover:bg-primary-container" style="height: 95%;"></div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Thu</span>
+</div>
+<!-- Fri -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
+<span class="font-label-sm text-[10px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">2.5h (proj)</span>
+<div class="w-full max-w-[36px] bg-surface-container-high rounded-t-lg transition-all group-hover:bg-primary-container" style="height: 50%;"></div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Fri</span>
+</div>
+<!-- Sat -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
+<span class="font-label-sm text-[10px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">1.5h</span>
+<div class="w-full max-w-[36px] bg-surface-container-high rounded-t-lg transition-all group-hover:bg-primary-container" style="height: 30%;"></div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Sat</span>
+</div>
+<!-- Sun -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end group">
+<span class="font-label-sm text-[10px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">2.0h</span>
+<div class="w-full max-w-[36px] bg-surface-container-high rounded-t-lg transition-all group-hover:bg-primary-container" style="height: 38%;"></div>
+<span class="font-label-sm text-label-sm text-outline font-medium">Sun</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-[11px] pt-1">
+<span>* Wed is live session progress</span>
+<span>Goal baseline: 4.0h/day threshold</span>
+</div>
+</div>
+<!-- Subject Breakdown Proportion Bar -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-on-surface font-label-sm text-label-sm">
+<span class="font-semibold uppercase tracking-wider text-outline text-[10px]">Cohort Workload Distribution</span>
+<span>Total: 10.2 hrs this week</span>
+</div>
+<div class="h-2.5 w-full bg-surface-container-high rounded-full flex overflow-hidden">
+<div class="bg-primary h-full" style="width: 45%;" title="BioEngineering 45%"></div>
+<div class="bg-secondary h-full" style="width: 30%;" title="Organic Chemistry 30%"></div>
+<div class="bg-tertiary-container h-full" style="width: 15%;" title="Mechanical Modeling 15%"></div>
+<div class="bg-outline h-full" style="width: 10%;" title="BioEthics 10%"></div>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>BioEng 45%</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Chem 30%</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span>Mech Eng 15%</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Ethics 10%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (5 cols): Logged Sessions Timeline & Quick Reflection Note -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Today's Focus Log</h2>
+<span class="font-label-sm text-label-sm text-outline">Verified Cognitive Blocks</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-2.5 py-0.5 rounded-full font-semibold">
+          3 Blocks Logged
+        </span>
+</div>
+<!-- Timeline List -->
+<div class="flex flex-col gap-space-sm" id="timeline-log">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">BioEng 204 • Circuit Analysis</span>
+<span class="font-body-sm text-body-sm text-outline">Sensor signal amplification formulas</span>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm font-semibold text-primary">25 min</span>
+<span class="font-body-sm text-[10px] text-outline">08:45 – 09:10</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Chem 140B • Reaction Pathways</span>
+<span class="font-body-sm text-body-sm text-outline">Thermodynamic equilibrium calculations</span>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm font-semibold text-primary">25 min</span>
+<span class="font-body-sm text-[10px] text-outline">09:30 – 09:55</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">BioEng 204 • IoT Nodes</span>
+<span class="font-body-sm text-body-sm text-outline">Telemetry payload compression checks</span>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm font-semibold text-primary">25 min</span>
+<span class="font-body-sm text-[10px] text-outline">10:15 – 10:40</span>
+</div>
+</div>
+</div>
+<!-- Quick Reflection Note Trigger Section -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">edit_note</span>
+            Active Recall Sprint Note
+          </span>
+<span class="font-body-sm text-[10px] text-outline">Attached to BioEng 204</span>
+</div>
+<textarea class="w-full bg-surface-container-lowest p-2 rounded text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" id="reflection-input" placeholder="Document mental roadblocks or flashcard trigger points from this sprint..." rows="2"></textarea>
+<div class="flex justify-end">
+<button class="px-3 py-1 bg-primary text-on-primary rounded text-label-sm font-label-sm hover:bg-primary-container transition-colors shadow-sm" onclick="saveSprintNote()">
+            Save Note to Sprint
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let timerInterval = null;
+  let isRunning = true;
+  let totalSeconds = 25 * 60;
+  let remainingSeconds = 21 * 60 + 42;
+  let activeModeMinutes = 25;
+  let chimeActive = true;
+
+  const timerDisplay = document.getElementById('timer-display');
+  const progressRing = document.getElementById('timer-progress-ring');
+  const progressPercentText = document.getElementById('progress-percent');
+  const toggleBtn = document.getElementById('btn-toggle');
+  const toggleIcon = document.getElementById('toggle-icon');
+  const toggleText = document.getElementById('toggle-text');
+  const sprintLabel = document.getElementById('active-sprint-label');
+  const circumference = 2 * Math.PI * 112; // 703.716
+
+  function formatTime(sec) {
+    const m = Math.floor(sec / 60);
+    const s = sec % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  }
+
+  function updateDisplay() {
+    timerDisplay.innerText = formatTime(remainingSeconds);
+    const elapsed = totalSeconds - remainingSeconds;
+    const progressFraction = elapsed / totalSeconds;
+    const offset = circumference * (1 - progressFraction);
+    progressRing.style.strokeDashoffset = offset;
+    
+    const pct = Math.round(progressFraction * 100);
+    progressPercentText.innerText = `${pct}% Elapsed • ${activeModeMinutes}m Interval`;
+  }
+
+  function tick() {
+    if (remainingSeconds > 0) {
+      remainingSeconds--;
+      updateDisplay();
+    } else {
+      clearInterval(timerInterval);
+      isRunning = false;
+      toggleIcon.innerText = "play_arrow";
+      toggleText.innerText = "Start Sprint";
+      if (chimeActive) {
+        alert("Sprint complete! Take a deliberate recovery break.");
+      }
+    }
+  }
+
+  function toggleTimer() {
+    if (isRunning) {
+      clearInterval(timerInterval);
+      isRunning = false;
+      toggleIcon.innerText = "play_arrow";
+      toggleText.innerText = "Resume Sprint";
+      toggleBtn.classList.remove('bg-primary-container');
+      toggleBtn.classList.add('bg-tertiary-container');
+    } else {
+      timerInterval = setInterval(tick, 1000);
+      isRunning = true;
+      toggleIcon.innerText = "pause";
+      toggleText.innerText = "Pause Sprint";
+      toggleBtn.classList.add('bg-primary-container');
+      toggleBtn.classList.remove('bg-tertiary-container');
+    }
+  }
+
+  function resetTimer() {
+    clearInterval(timerInterval);
+    isRunning = false;
+    remainingSeconds = totalSeconds;
+    updateDisplay();
+    toggleIcon.innerText = "play_arrow";
+    toggleText.innerText = "Start Sprint";
+  }
+
+  function setTimerDuration(minutes, title, element) {
+    clearInterval(timerInterval);
+    isRunning = false;
+    activeModeMinutes = minutes;
+    totalSeconds = minutes * 60;
+    remainingSeconds = totalSeconds;
+    
+    const taskSelect = document.getElementById('task-select');
+    const selectedTask = taskSelect.options[taskSelect.selectedIndex].text.split('—')[0].trim();
+    sprintLabel.innerText = `CURRENT INTERVAL: ${selectedTask} • ${title}`;
+
+    const buttons = document.querySelectorAll('#mode-selector-group button');
+    buttons.forEach(btn => {
+      btn.className = "px-3 py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all";
+    });
+    element.className = "px-3 py-1.5 rounded-md font-label-md text-label-md transition-all bg-primary-container text-on-primary-container shadow-sm font-semibold";
+
+    updateDisplay();
+    toggleIcon.innerText = "play_arrow";
+    toggleText.innerText = `Start ${title}`;
+  }
+
+  function skipToBreak() {
+    const breakBtn = document.getElementById('mode-5');
+    setTimerDuration(5, 'Short Rest', breakBtn);
+  }
+
+  function toggleAudioChime() {
+    chimeActive = !chimeActive;
+    const chimeBtn = document.getElementById('btn-chime');
+    const chimeIcon = document.getElementById('chime-icon');
+    if (chimeActive) {
+      chimeBtn.className = "flex items-center gap-1.5 px-3 py-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md hover:bg-surface-container-high transition-all";
+      chimeIcon.innerText = "notifications_active";
+    } else {
+      chimeBtn.className = "flex items-center gap-1.5 px-3 py-3 rounded-lg bg-surface-container-low text-outline font-label-md text-label-md hover:bg-surface-container-high transition-all";
+      chimeIcon.innerText = "notifications_off";
+    }
+  }
+
+  function saveSprintNote() {
+    const input = document.getElementById('reflection-input');
+    if (input.value.trim() !== '') {
+      alert("Reflection note logged to BioEng 204 Portfolio!");
+      input.value = '';
+    }
+  }
+
+  // Global Keyboard Shortcuts
+  window.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+      return;
+    }
+    if (e.code === 'Space') {
+      e.preventDefault();
+      toggleTimer();
+    } else if (e.key === 'r' || e.key === 'R') {
+      resetTimer();
+    } else if (e.key === 'm' || e.key === 'M') {
+      const mode50 = document.getElementById('mode-50');
+      setTimerDuration(50, 'Deep Immersion', mode50);
+    }
+  });
+
+  // Start live tick initially for demo feel
+  timerInterval = setInterval(tick, 1000);
+</script></main></div></body></html>

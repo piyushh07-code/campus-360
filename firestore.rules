@@ -1,0 +1,80 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && (
+        request.auth.token.role == 'facilities_admin' ||
+        request.auth.token.role == 'system_admin' ||
+        request.auth.token.email.matches('.*@stanford\\.edu') && request.auth.token.admin == true
+      );
+    }
+
+    // User profiles collection
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId) || isAdmin();
+    }
+
+    // SmartStudy Tasks collection: strictly private to each student
+    match /tasks/{taskId} {
+      allow read, write: if isAuthenticated() && (resource == null || resource.data.userId == request.auth.uid || request.resource.data.userId == request.auth.uid);
+    }
+
+    // Study Sessions & Focus tracking: strictly private
+    match /focus_sessions/{sessionId} {
+      allow read, write: if isAuthenticated() && (resource == null || resource.data.userId == request.auth.uid || request.resource.data.userId == request.auth.uid);
+    }
+
+    // Courses & Syllabi: all authenticated students can read; topic mastery status is user-scoped
+    match /courses/{courseId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+      
+      match /topics/{topicId} {
+        allow read: if isAuthenticated();
+        allow write: if isAdmin();
+      }
+    }
+
+    // Academic Calendar Events: all campus members can read; admins can write global events
+    match /calendar_events/{eventId} {
+      allow read: if isAuthenticated();
+      allow create, update, delete: if isAuthenticated() && (request.resource.data.userId == request.auth.uid || isAdmin());
+    }
+
+    // WaterWatch Issue Reports:
+    // Any student can submit reports and view public statuses.
+    // Only Facilities Admins can triage, change status to In Progress / Resolved, or reassign dispatch teams.
+    match /water_reports/{reportId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && request.resource.data.reporterId == request.auth.uid;
+      allow update: if isAdmin() || (
+        isAuthenticated() && 
+        resource.data.reporterId == request.auth.uid && 
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['notes', 'photoUrl'])
+      );
+      allow delete: if isAdmin();
+    }
+
+    // WaterWatch Campus Analytics & Fixture Statistics
+    match /water_metrics/{metricId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // User Notifications: strictly private
+    match /notifications/{notificationId} {
+      allow read, write: if isAuthenticated() && (resource == null || resource.data.userId == request.auth.uid || request.resource.data.userId == request.auth.uid);
+    }
+  }
+}

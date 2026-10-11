@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#f9f9ff", "surface-dim": "#cfdaf1", "tertiary-fixed": "#90f5d8", "secondary-fixed-dim": "#acc8f7", "on-secondary-container": "#3d5982", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "tertiary-fixed-dim": "#73d8bd", "surface-container": "#e7eeff", "secondary-fixed": "#d5e3ff", "primary-fixed": "#dae2ff", "on-surface": "#111c2c", "inverse-surface": "#263142", "on-primary-fixed-variant": "#0040a0", "surface": "#f9f9ff", "on-tertiary-fixed-variant": "#005141", "on-tertiary-fixed": "#002019", "on-background": "#111c2c", "primary-container": "#2f6fed", "error-container": "#ffdad6", "secondary": "#435f89", "on-secondary-fixed": "#001c3b", "on-secondary-fixed-variant": "#2b486f", "outline-variant": "#c2c6d7", "surface-container-low": "#f0f3ff", "primary-fixed-dim": "#b1c5ff", "on-primary-fixed": "#001847", "on-secondary": "#ffffff", "on-error-container": "#93000a", "tertiary": "#006b57", "error": "#ba1a1a", "on-primary-container": "#ffffff", "tertiary-container": "#07866e", "surface-container-highest": "#d8e3fa", "on-primary": "#ffffff", "on-surface-variant": "#424654", "inverse-on-surface": "#ebf1ff", "background": "#f9f9ff", "surface-container-high": "#dee9ff", "on-tertiary": "#ffffff", "primary": "#0055ce", "inverse-primary": "#b1c5ff", "secondary-container": "#b4d0ff", "surface-tint": "#0056d0", "surface-variant": "#d8e3fa", "on-tertiary-container": "#ffffff", "outline": "#737786" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter": "1.25rem", "margin": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem" }, "fontFamily": { "body-lg": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Newsreader"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Newsreader"], "label-md": ["Inter"], "metric-val": ["Inter"], "headline-md": ["Newsreader"], "headline-lg": ["Newsreader"], "display-lg-mobile": ["Newsreader"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "metric-val": ["28px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(23,54,93,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="Clean vector emblem for SmartCampus 360 combining an open book motif with a central water droplet surrounded by a circular 360-degree orbital ring in navy #17365D, academic blue #2F6FED, and sustainability teal #138A72.. Brand logo. - Primary color: #2f6fed
+- Font: newsreader
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VWWlnOaP06Z642C67CrZbPZyIMl3R52Ji8HHHwxKyPBkcWZ2-spvMfBNW6StfDU-qgEtFtnAwH9E-bQ_H1yd6tiiHfGIuQfktVFk67oCvVxRrvHBDNZMWHr5TVOhVb-RO_n-BCG5P34hJz4TuklEiF0PDbRpq4eS--49zt26uJRXFtNm-WhcVK60CBuL-XE6Ez64L4N2vX6aEAt9yXLuhzSDuzavfPm37zULcXbzSoq2qHKVnwqmqCLGg"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-none">SmartCampus 360</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-medium bg-tertiary-fixed text-on-tertiary-fixed-variant flex-shrink-0 leading-none">-18% gal</span></div><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Dashboard</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-1.5 pl-0.5"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Greeting & Fast Action Hub -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Academic Horizon 360</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface font-headline-lg tracking-tight mt-0.5">
+            Welcome back, Elena
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[15px] text-primary">calendar_today</span>
+            Wednesday, Oct 16 • Fall Quarter W4
+          </p>
+</div>
+<div class="flex-shrink-0 pt-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            On Track
+          </span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="flex items-center justify-center gap-2 h-11 px-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-[0.98] transition-all" id="add-task-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span class="truncate">+ Add Study Task</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-11 px-3 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-lg text-label-lg shadow-sm active:scale-[0.98] transition-all" id="report-water-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-tertiary">water_drop</span>
+<span class="truncate">Report Water</span>
+</button>
+</div>
+</section>
+<!-- 4 KPI Summary Cards (2x2 Grid) -->
+<section class="grid grid-cols-2 gap-space-xs">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending Tasks</span>
+<span class="p-1 rounded bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[16px] block">assignment_late</span>
+</span>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-metric-val text-metric-val text-on-surface">5</span>
+<span class="font-body-sm text-body-sm text-error font-medium">due soon</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 high priority</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Study Progress</span>
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[16px] block">trending_up</span>
+</span>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-1">
+<span class="font-metric-val text-metric-val text-on-surface">68%</span>
+<span class="font-label-sm text-label-sm text-tertiary">+4% w/w</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 68%"></div>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open Water Logs</span>
+<span class="p-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[16px] block">build_circle</span>
+</span>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-1">
+<span class="font-metric-val text-metric-val text-on-surface">1</span>
+<span class="font-label-sm text-label-sm text-tertiary">Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Eng Hall Rm 204</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resolved Reports</span>
+<span class="p-1 rounded bg-surface-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px] block">task_alt</span>
+</span>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-1">
+<span class="font-metric-val text-metric-val text-on-surface">2</span>
+<span class="font-label-sm text-label-sm text-secondary">Saved 420 gal</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Verified this term</span>
+</div>
+</div>
+</section>
+<!-- Weekly Study Velocity Inline Chart -->
+<section class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">insights</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Weekly Study Velocity</h2>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-medium">
+          6-day streak 🔥
+        </span>
+</div>
+<!-- Mini Bar Sparkline -->
+<div class="flex items-end justify-between pt-2 px-1 gap-2 h-24">
+<!-- Mon -->
+<div class="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">3.2h</span>
+<div class="w-full bg-surface-container-high rounded-t h-[64%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+</div>
+<!-- Tue -->
+<div class="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">4.1h</span>
+<div class="w-full bg-surface-container-high rounded-t h-[82%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Wed (Today) -->
+<div class="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-primary font-bold">2.5h</span>
+<div class="w-full bg-primary rounded-t h-[50%] relative">
+<span class="absolute -top-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-surface-container-lowest rounded-full"></span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">W</span>
+</div>
+<!-- Thu -->
+<div class="flex flex-col items-center gap-1.5 flex-1 h-full justify-end opacity-40">
+<span class="font-label-sm text-label-sm text-on-surface-variant">-</span>
+<div class="w-full bg-surface-container rounded-t h-[12%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Fri -->
+<div class="flex flex-col items-center gap-1.5 flex-1 h-full justify-end opacity-40">
+<span class="font-label-sm text-label-sm text-on-surface-variant">-</span>
+<div class="w-full bg-surface-container rounded-t h-[12%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">F</span>
+</div>
+<!-- Sat -->
+<div class="flex flex-col items-center gap-1.5 flex-1 h-full justify-end opacity-40">
+<span class="font-label-sm text-label-sm text-on-surface-variant">-</span>
+<div class="w-full bg-surface-container rounded-t h-[12%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+<!-- Sun -->
+<div class="flex flex-col items-center gap-1.5 flex-1 h-full justify-end opacity-40">
+<span class="font-label-sm text-label-sm text-on-surface-variant">-</span>
+<div class="w-full bg-surface-container rounded-t h-[12%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Today: 2.5h of 4.0h target</span>
+<span class="text-tertiary font-medium">62% daily quota</span>
+</div>
+</section>
+<!-- Priority Action / Today's Study Tasks -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">fact_check</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Today's Study Plan</h2>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline">View All (5)</button>
+</div>
+<div class="flex flex-col gap-space-xs" id="task-list-container">
+<!-- Task Card 1 -->
+<div class="task-card bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-start gap-space-sm transition-all duration-200">
+<button aria-label="Mark task done" class="task-toggle mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] check-icon opacity-0">check</span>
+</button>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wide bg-error-container text-on-error-container">
+                High Priority
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Due 5:00 PM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• 45 min</span>
+</div>
+<p class="font-body-md text-body-md font-semibold text-on-surface mt-1 task-title">
+              BioEng 204: Biometric Strain Gauge Schematic
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Refine wheatstone bridge bridge equation in LTSpice simulator.
+            </p>
+</div>
+</div>
+<!-- Task Card 2 -->
+<div class="task-card bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-start gap-space-sm transition-all duration-200">
+<button aria-label="Mark task done" class="task-toggle mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] check-icon opacity-0">check</span>
+</button>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wide bg-secondary-fixed text-on-secondary-fixed-variant">
+                Medium Priority
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Due 8:30 PM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• 30 min</span>
+</div>
+<p class="font-body-md text-body-md font-semibold text-on-surface mt-1 task-title">
+              Chem 140B: Aldol Condensation Reaction Mechanism
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Annotate enolate intermediates and thermodynamic pathways.
+            </p>
+</div>
+</div>
+<!-- Task Card 3 -->
+<div class="task-card bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-start gap-space-sm transition-all duration-200">
+<button aria-label="Mark task done" class="task-toggle mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] check-icon opacity-0">check</span>
+</button>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wide bg-surface-container-highest text-on-surface-variant">
+                Routine
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tonight</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• 50 min</span>
+</div>
+<p class="font-body-md text-body-md font-semibold text-on-surface mt-1 task-title">
+              Fluid Dynamics Pset 4 Practice Drill
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Navier-Stokes laminar flow boundary conditions equations 4-7.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Imminent Academic Deadlines -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-error">event_upcoming</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Upcoming Deadlines</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Week 4-5</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Deadline 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-lg bg-error-container text-on-error-container flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase font-bold tracking-wider">OCT</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-none">21</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md font-semibold text-on-surface truncate">
+                BioEng Midterm 1: Bio-Sensors
+              </p>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-error font-medium">5 days left</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• 25% course grade</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+<!-- Deadline 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="flex flex-col items-center justify-center w-12 h-12 rounded-lg bg-surface-container text-on-secondary-container flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase font-bold tracking-wider">OCT</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-none">18</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-md text-body-md font-semibold text-on-surface truncate">
+                IoT Node Schematic Submission
+              </p>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-primary font-medium">2 days left</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• Lab Portfolio</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Recent WaterWatch Incident Tracker -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-tertiary">water_drop</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">WaterWatch Incident Tracker</h2>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-medium">
+          Live Dispatch
+        </span>
+</div>
+<!-- Ticket Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-primary">#W-1093</span>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant">
+                Tech Dispatched
+              </span>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mt-1">
+              Leaking Tap — Engineering Hall Rm 204
+            </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Reported Today at 10:14 AM • Est. loss 1.2 gal/hr</span>
+</div>
+<div class="p-2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">plumbing</span>
+</div>
+</div>
+<!-- 4-Stage Progress Line -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-tertiary font-semibold">Stage 3 of 4: Plumber Tech B on-site</span>
+<span class="text-on-surface-variant">75%</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 h-1.5">
+<div class="bg-tertiary rounded-full"></div>
+<div class="bg-tertiary rounded-full"></div>
+<div class="bg-tertiary rounded-full"></div>
+<div class="bg-surface-container-highest rounded-full"></div>
+</div>
+<div class="flex justify-between text-[10px] text-on-surface-variant pt-0.5 font-label-sm">
+<span>Logged</span>
+<span>Reviewed</span>
+<span class="text-tertiary font-bold">On-site</span>
+<span>Closed</span>
+</div>
+</div>
+<!-- Footer link button -->
+<button class="mt-1 w-full flex items-center justify-between py-2 px-3 rounded bg-surface-container-low text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span>View Report Timeline &amp; Diagnostics</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Context / Ambient Campus Insight -->
+<div class="bg-gradient-to-r from-surface-container to-secondary-fixed/40 p-space-md rounded-lg flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">eco</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Sustainability Milestone</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">
+          Engineering Quad conserved <strong>1,480 gal</strong> this week through prompt leak resolutions.
+        </p>
+</div>
+</div>
+<!-- Software Footnote -->
+<footer class="pt-2 pb-6 flex flex-col items-center justify-center text-center gap-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+        SmartCampus 360 v2.4 Mobile • Fall Academic Term
+      </p>
+<p class="font-body-sm text-[11px] text-outline">
+        Integrated with Stanford Canvas LMS &amp; BuildingOps Telemetry
+      </p>
+</footer>
+</div>
+</div>
+<script>
+  // Micro-interactions for student tasks
+  document.querySelectorAll('.task-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const card = this.closest('.task-card');
+      const title = card.querySelector('.task-title');
+      const icon = this.querySelector('.check-icon');
+      
+      const isCompleted = title.classList.contains('line-through');
+      
+      if (!isCompleted) {
+        title.classList.add('line-through', 'opacity-50');
+        this.classList.remove('bg-surface-container', 'text-primary');
+        this.classList.add('bg-tertiary', 'text-on-tertiary');
+        icon.classList.remove('opacity-0');
+        card.classList.add('opacity-75');
+      } else {
+        title.classList.remove('line-through', 'opacity-50');
+        this.classList.add('bg-surface-container', 'text-primary');
+        this.classList.remove('bg-tertiary', 'text-on-tertiary');
+        icon.classList.add('opacity-0');
+        card.classList.remove('opacity-75');
+      }
+    });
+  });
+
+  // Action Buttons Quick Feedback
+  const reportBtn = document.getElementById('report-water-btn');
+  if (reportBtn) {
+    reportBtn.addEventListener('click', () => {
+      const orig = reportBtn.innerHTML;
+      reportBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Opening...</span>';
+      setTimeout(() => {
+        reportBtn.innerHTML = orig;
+      }, 700);
+    });
+  }
+
+  const addTaskBtn = document.getElementById('add-task-btn');
+  if (addTaskBtn) {
+    addTaskBtn.addEventListener('click', () => {
+      const orig = addTaskBtn.innerHTML;
+      addTaskBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-bounce">edit</span><span>Task Modal...</span>';
+      setTimeout(() => {
+        addTaskBtn.innerHTML = orig;
+      }, 700);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(23,54,93,0.06)]" data-active-classes="text-primary font-medium"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 transition-colors text-primary font-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[24px]">space_dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="study-planner" href="#"><span class="material-symbols-outlined text-[24px]">event_available</span><span class="font-label-sm text-label-sm">Planner</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-assistant" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm">AI Study</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="waterwatch" href="#"><span class="material-symbols-outlined text-[24px]">water_drop</span><span class="font-label-sm text-label-sm">WaterWatch</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="more-hub" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-sm text-label-sm">More</span></a></div></nav></body></html>

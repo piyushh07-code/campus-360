@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>SmartCampus 360</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "secondary": "#435f89", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "tertiary-container": "#07866e", "primary-container": "#2f6fed", "tertiary-fixed": "#90f5d8", "on-secondary": "#ffffff", "on-background": "#111c2c", "on-surface": "#111c2c", "on-tertiary-fixed": "#002019", "secondary-fixed-dim": "#acc8f7", "outline-variant": "#c2c6d7", "on-secondary-fixed-variant": "#2b486f", "on-primary-fixed": "#001847", "on-primary-fixed-variant": "#0040a0", "tertiary": "#006b57", "on-surface-variant": "#424654", "outline": "#737786", "inverse-on-surface": "#ebf1ff", "surface-container-high": "#dee9ff", "secondary-container": "#b4d0ff", "primary-fixed": "#dae2ff", "surface": "#f9f9ff", "background": "#f9f9ff", "inverse-primary": "#b1c5ff", "surface-container-low": "#f0f3ff", "error": "#ba1a1a", "on-tertiary-container": "#ffffff", "surface-container": "#e7eeff", "tertiary-fixed-dim": "#73d8bd", "on-secondary-container": "#3d5982", "surface-bright": "#f9f9ff", "surface-variant": "#d8e3fa", "surface-tint": "#0056d0", "on-tertiary-fixed-variant": "#005141", "primary": "#0055ce", "secondary-fixed": "#d5e3ff", "on-tertiary": "#ffffff", "primary-fixed-dim": "#b1c5ff", "on-primary": "#ffffff", "surface-container-highest": "#d8e3fa", "inverse-surface": "#263142", "on-primary-container": "#ffffff", "surface-dim": "#cfdaf1", "on-error": "#ffffff", "on-secondary-fixed": "#001c3b" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter": "1.25rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "space-md": "1rem", "margin": "2rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, "fontFamily": { "display-lg-mobile": ["Newsreader"], "body-sm": ["Inter"], "headline-sm": ["Newsreader"], "metric-val": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Newsreader"], "headline-lg": ["Newsreader"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-md": ["Newsreader"], "label-sm": ["Inter"] }, "fontSize": { "display-lg-mobile": ["30px", { "lineHeight": "38px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "500" }], "metric-val": ["28px", { "lineHeight": "32px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "fontWeight": "500" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface min-h-full flex flex-col antialiased selection:bg-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(23,54,93,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><img alt="Clean vector emblem for SmartCampus 360 combining an open book motif with a central water droplet surrounded by a circular 360-degree orbital ring in navy #17365D, academic blue #2F6FED, and sustainability teal #138A72.. Brand logo. - Primary color: #2f6fed
+- Font: newsreader
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VWWlnOaP06Z642C67CrZbPZyIMl3R52Ji8HHHwxKyPBkcWZ2-spvMfBNW6StfDU-qgEtFtnAwH9E-bQ_H1yd6tiiHfGIuQfktVFk67oCvVxRrvHBDNZMWHr5TVOhVb-RO_n-BCG5P34hJz4TuklEiF0PDbRpq4eS--49zt26uJRXFtNm-WhcVK60CBuL-XE6Ez64L4N2vX6aEAt9yXLuhzSDuzavfPm37zULcXbzSoq2qHKVnwqmqCLGg"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none truncate">SmartCampus</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-none">Settings More</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="hidden xs:flex sm:flex items-center gap-1 py-1 px-2.5 rounded-full bg-tertiary-container/15 text-tertiary"><span class="material-symbols-outlined text-[15px]">water_drop</span><span class="font-label-sm text-label-sm font-semibold whitespace-nowrap">-18% gal</span></div><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-8 space-y-space-md">
+<!-- Toast Notification Banner -->
+<div class="transition-all duration-300 transform -translate-y-4 opacity-0 pointer-events-none fixed top-20 left-4 right-4 z-50 p-space-sm bg-tertiary text-on-tertiary rounded-xl shadow-xl flex items-center justify-between gap-3" id="saveToast">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-tertiary font-medium leading-snug">
+        Settings updated successfully. Synchronized across devices.
+      </p>
+</div>
+<button class="text-on-tertiary/80 hover:text-on-tertiary p-1" onclick="dismissToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Profile Identity Card -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/5 rounded-full pointer-events-none blur-xl"></div>
+<div class="flex items-start gap-space-md relative">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Warm collegiate studio headshot of Elena Rostova, a 20-year-old female bioengineering student with soft friendly smile, gentle academic library background with amber shelf lighting, wearing a navy knit cardigan, natural clean lighting in Stanford colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnR7p-bZUrq6ZsSJoetbFDMB5uKQdyOHBh5uGasHRf4159jIJxF9Mp_KDsaTSELpQlTC6aPRCSsCCgZYInCI8D8ZJ1v5mI4Glb84T_tyoBQWudGZfKQ4_ZKUpYCA2IEhOxXjz8Eb2TyzJ_fi1B0R-7J7SIAXrwYa4eTUfJWa0yBvAhu1_bTJ5taHPlt-Cq1qtzycAFPUPqyb4Mt7BCBz316z__1pdHcwWLFOijtF2tJm_RujVwOPxP"/>
+<button aria-label="Change photo" class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md hover:bg-primary-container transition-transform active:scale-90" type="button">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+</button>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h1 class="font-headline-md text-headline-md text-on-surface truncate">Elena Rostova</h1>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+            Canvas Linked
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-medium mt-0.5 truncate">Bioengineering Junior • Class of '26</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded">ID: #SC-948201</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">eco</span> Dorm Champion
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 1: Study & AI Preferences -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Study &amp; AI Preferences</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">SmartStudy Agent &amp; Routine calibration</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium bg-primary-fixed/40 px-2 py-1 rounded-full">Autonomous</span>
+</div>
+<!-- Daily Study Target Segmented Selector -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="font-label-lg text-label-lg text-on-surface">Daily Study Target</label>
+<span class="font-label-md text-label-md text-primary font-semibold" id="targetLabel">4.0h target / day</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 p-1 bg-surface-container-low rounded-lg" id="targetSegments">
+<button class="target-btn py-2 text-center rounded font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" onclick="selectStudyTarget(this, '2.0h')" type="button">2.0h</button>
+<button class="target-btn py-2 text-center rounded font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" onclick="selectStudyTarget(this, '3.0h')" type="button">3.0h</button>
+<button class="target-btn py-2 text-center rounded font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-sm transition-all" onclick="selectStudyTarget(this, '4.0h')" type="button">4.0h</button>
+<button class="target-btn py-2 text-center rounded font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" onclick="selectStudyTarget(this, '5.0h')" type="button">5.0h</button>
+</div>
+</div>
+<!-- Focus Duration Pills -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface">Preferred Focus Duration</label>
+<div class="flex gap-2 overflow-x-auto pb-1" id="focusDurationGroup">
+<button class="focus-pill shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm" onclick="selectPill(this, 'focus')" type="button">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+          25m Pomodoro
+        </button>
+<button class="focus-pill shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all" onclick="selectPill(this, 'focus')" type="button">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+          50m Deep Work
+        </button>
+<button class="focus-pill shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all" onclick="selectPill(this, 'focus')" type="button">
+<span class="material-symbols-outlined text-[16px]">waves</span>
+          90m Flow State
+        </button>
+</div>
+</div>
+<!-- AI Study Assistant Persona -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface">AI Study Assistant Persona</label>
+<div class="grid grid-cols-3 gap-2" id="toneGroup">
+<button class="tone-btn flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm text-center gap-1 transition-all" onclick="selectTone(this)" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">forum</span>
+          Socratic Tutor
+        </button>
+<button class="tone-btn flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm text-center gap-1 transition-all" onclick="selectTone(this)" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">short_text</span>
+          Concise Notes
+        </button>
+<button class="tone-btn flex flex-col items-center justify-center p-2.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold text-center gap-1 shadow-sm transition-all" onclick="selectTone(this)" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-primary">quiz</span>
+          Exam Drill
+        </button>
+</div>
+</div>
+<!-- Syllabus Auto-Sync Toggle -->
+<div class="flex items-center justify-between pt-2">
+<div class="pr-3">
+<div class="font-label-lg text-label-lg text-on-surface">Canvas Syllabus Auto-Sync</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Weekly AI parsing of updated problem sets &amp; labs</p>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary relative p-1 transition-colors duration-200 shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-on-primary shadow-sm transform translate-x-5 transition-transform duration-200"></div>
+</button>
+</div>
+</section>
+<!-- Section 2: WaterWatch & Campus Conservation Alerts -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">WaterWatch &amp; Campus Alerts</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dorm conservation telemetry &amp; reporting</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">Eco-Tier 1</span>
+</div>
+<!-- Dorm Affiliation Selector -->
+<div class="space-y-1.5">
+<label class="font-label-lg text-label-lg text-on-surface">Campus Dorm &amp; Room Assignment</label>
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]">apartment</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">North Quad — Kimball Hall (Room 312)</span>
+</div>
+<button class="text-tertiary hover:text-tertiary-container font-label-md text-label-md font-semibold shrink-0 ml-2" type="button">Edit</button>
+</div>
+</div>
+<!-- Dorm Conservation Alerts Toggle -->
+<div class="flex items-center justify-between py-1">
+<div class="pr-3">
+<div class="font-label-lg text-label-lg text-on-surface">Dorm Building Threshold Alerts</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant notification if Kimball Hall exceeds hourly gallons cap</p>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-tertiary relative p-1 transition-colors duration-200 shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-on-tertiary shadow-sm transform translate-x-5 transition-transform duration-200"></div>
+</button>
+</div>
+<!-- Emergency Leak Broadcasts Toggle -->
+<div class="flex items-center justify-between py-1">
+<div class="pr-3">
+<div class="font-label-lg text-label-lg text-on-surface">Emergency Leak Broadcasts</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Critical pressure drops and rapid sensor anomalies</p>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-tertiary relative p-1 transition-colors duration-200 shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-on-tertiary shadow-sm transform translate-x-5 transition-transform duration-200"></div>
+</button>
+</div>
+</section>
+<!-- Section 3: Notification Preferences -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center gap-2 pb-1">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Notification Channels</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fine-tune device interruptions and briefings</p>
+</div>
+</div>
+<div class="space-y-3">
+<!-- Task Due Dates -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_late</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Task Due Dates &amp; Exams</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">60-minute pre-deadline reminder</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary relative p-1 transition-colors duration-200 shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-on-primary shadow-sm transform translate-x-5 transition-transform duration-200"></div>
+</button>
+</div>
+<!-- Daily Morning Briefing -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Daily Morning Briefing</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Summary dispatched daily at 08:00 AM</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary relative p-1 transition-colors duration-200 shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-on-primary shadow-sm transform translate-x-5 transition-transform duration-200"></div>
+</button>
+</div>
+<!-- Water Issue Status Updates -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">water</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Water Issue Status Updates</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Plumbing resolution tickets in quad</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary relative p-1 transition-colors duration-200 shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-on-primary shadow-sm transform translate-x-5 transition-transform duration-200"></div>
+</button>
+</div>
+<!-- Email Digest (Off) -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">mail</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Weekly Email Digest</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sent Sundays to e.rostova@stanford.edu</p>
+</div>
+</div>
+<button aria-checked="false" class="w-12 h-7 rounded-full bg-outline-variant relative p-1 transition-colors duration-200 shrink-0" onclick="toggleSwitch(this)" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-surface shadow-sm transform translate-x-0 transition-transform duration-200"></div>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 4: Account Security & Authentication -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center gap-2 pb-1">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Account Security</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Access credentials &amp; active student sessions</p>
+</div>
+</div>
+<!-- Password Management -->
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-lg">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Campus Password</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Last changed 42 days ago</p>
+</div>
+<button class="px-3 py-1.5 bg-surface-container text-primary font-label-md text-label-md font-semibold rounded hover:bg-surface-container-high transition-colors" type="button">
+        Update
+      </button>
+</div>
+<!-- 2FA Status -->
+<div class="p-3 bg-tertiary-fixed/20 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[22px]">verified_user</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Two-Factor Authentication</span>
+<p class="font-body-sm text-body-sm text-tertiary font-medium">Enabled via Duo Mobile</p>
+</div>
+</div>
+<span class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+</div>
+<!-- Active Sessions -->
+<div class="space-y-2">
+<span class="font-label-md text-label-md text-secondary font-semibold uppercase tracking-wider">Active Devices</span>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2.5 rounded bg-surface-container-low">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">phone_iphone</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+                iPhone 15 Pro
+                <span class="px-1.5 py-0.2 rounded bg-primary text-on-primary font-label-sm text-[10px]">Current</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Palo Alto, CA • Active now</p>
+</div>
+</div>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded bg-surface-container-low">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">laptop_mac</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">MacBook Pro 14"</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stanford Campus Wi-Fi • 2h ago</p>
+</div>
+</div>
+<button class="text-error font-label-sm text-label-sm hover:underline" type="button">Revoke</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky-Safe Bottom Actions Container -->
+<div class="pt-2 flex flex-col gap-2.5">
+<button class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold rounded-lg shadow-md flex items-center justify-center gap-2 active:scale-[0.99] transition-all" onclick="triggerSave()" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+      Save Changes
+    </button>
+<button class="w-full h-11 bg-surface-container-lowest hover:bg-surface-container text-secondary font-label-lg text-label-lg font-medium rounded-lg transition-colors flex items-center justify-center" onclick="resetForm()" type="button">
+      Cancel
+    </button>
+</div>
+</div>
+<script>
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const thumb = btn.firstElementChild;
+    const isTeal = btn.classList.contains('bg-tertiary');
+
+    if (isChecked) {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-primary', 'bg-tertiary');
+      btn.classList.add('bg-outline-variant');
+      thumb.classList.remove('translate-x-5');
+      thumb.classList.add('translate-x-0');
+    } else {
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.remove('bg-outline-variant');
+      btn.classList.add(isTeal ? 'bg-tertiary' : 'bg-primary');
+      thumb.classList.remove('translate-x-0');
+      thumb.classList.add('translate-x-5');
+    }
+  }
+
+  function selectStudyTarget(clickedBtn, hours) {
+    const buttons = document.querySelectorAll('.target-btn');
+    buttons.forEach(btn => {
+      btn.className = 'target-btn py-2 text-center rounded font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all';
+    });
+    clickedBtn.className = 'target-btn py-2 text-center rounded font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-sm transition-all';
+    document.getElementById('targetLabel').textContent = `${hours} target / day`;
+  }
+
+  function selectPill(clickedBtn, group) {
+    const pills = document.querySelectorAll('.focus-pill');
+    pills.forEach(pill => {
+      pill.className = 'focus-pill shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all';
+    });
+    clickedBtn.className = 'focus-pill shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm';
+  }
+
+  function selectTone(clickedBtn) {
+    const tones = document.querySelectorAll('.tone-btn');
+    tones.forEach(btn => {
+      btn.className = 'tone-btn flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm text-center gap-1 transition-all';
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.remove('text-on-primary');
+        icon.classList.add('text-secondary');
+      }
+    });
+    clickedBtn.className = 'tone-btn flex flex-col items-center justify-center p-2.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold text-center gap-1 shadow-sm transition-all';
+    const activeIcon = clickedBtn.querySelector('.material-symbols-outlined');
+    if (activeIcon) {
+      activeIcon.classList.remove('text-secondary');
+      activeIcon.classList.add('text-on-primary');
+    }
+  }
+
+  function triggerSave() {
+    const toast = document.getElementById('saveToast');
+    toast.classList.remove('-translate-y-4', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    setTimeout(() => {
+      dismissToast();
+    }, 4500);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('saveToast');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+    toast.classList.add('-translate-y-4', 'opacity-0', 'pointer-events-none');
+  }
+
+  function resetForm() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(23,54,93,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-1"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="study-planner" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-sm text-label-sm">Planner</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="ai-study-assistant" href="#"><span class="material-symbols-outlined text-[22px]">psychology</span><span class="font-label-sm text-label-sm">AI Study</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-2 py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="waterwatch-overview" href="#"><span class="material-symbols-outlined text-[22px]">water_ec</span><span class="font-label-sm text-label-sm">WaterWatch</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-2 py-1 transition-colors text-primary font-semibold" data-path="settings-more" href="#"><span class="material-symbols-outlined text-[22px]">more_horiz</span><span class="font-label-sm text-label-sm">More</span></a></div></nav></body></html>

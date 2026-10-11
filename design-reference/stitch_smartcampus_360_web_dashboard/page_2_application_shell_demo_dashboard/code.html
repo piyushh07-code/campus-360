@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#b1c5ff","error":"#ba1a1a","on-error-container":"#93000a","tertiary-fixed":"#90f5d8","surface-container-low":"#f0f3ff","primary-fixed":"#dae2ff","outline":"#737786","on-primary-fixed-variant":"#0040a0","surface-container-highest":"#d8e3fa","on-tertiary-container":"#ffffff","on-tertiary":"#ffffff","inverse-on-surface":"#ebf1ff","surface-dim":"#cfdaf1","tertiary-fixed-dim":"#73d8bd","inverse-surface":"#263142","on-primary-fixed":"#001847","error-container":"#ffdad6","outline-variant":"#c2c6d7","background":"#f9f9ff","surface-container-lowest":"#ffffff","surface-variant":"#d8e3fa","inverse-primary":"#b1c5ff","on-tertiary-fixed":"#002019","on-primary-container":"#ffffff","on-tertiary-fixed-variant":"#005141","tertiary-container":"#07866e","on-background":"#111c2c","on-secondary-fixed":"#001c3b","secondary-container":"#b4d0ff","primary-container":"#2f6fed","on-primary":"#ffffff","on-surface-variant":"#424654","secondary-fixed":"#d5e3ff","surface-bright":"#f9f9ff","surface":"#f9f9ff","secondary":"#435f89","on-secondary-container":"#3d5982","on-secondary":"#ffffff","on-secondary-fixed-variant":"#2b486f","on-error":"#ffffff","secondary-fixed-dim":"#acc8f7","surface-container":"#e7eeff","primary":"#0055ce","on-surface":"#111c2c","tertiary":"#006b57","surface-container-high":"#dee9ff","surface-tint":"#0056d0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter-mobile":"0.75rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-md":"1rem","margin":"2rem","gutter":"1.25rem","space-xs":"0.25rem"},"fontFamily":{"headline-md":["Newsreader"],"headline-sm":["Newsreader"],"headline-lg":["Newsreader"],"label-sm":["Inter"],"metric-val":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg-mobile":["Newsreader"],"display-lg":["Newsreader"],"label-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"metric-val":["28px",{"lineHeight":"32px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"display-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"500"}],"display-lg":["40px",{"lineHeight":"48px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"18px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col"><div class="px-space-md pb-space-lg flex items-center gap-space-sm"><img alt="SmartCampus 360 Full Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wte366E2yhap7plNb2kTPOOTc3cYO77KJT5sT_WRlrN5ZmczKaaBtwQdUrSxyUSl5W3ZfyROPvX5-KXEvvNKO-SZMJn5wX0d-_MezshMxhtn1H_yAc2akuV2QcS8Fw-qcG_Uie1wv8pxuuqPHiXek2GfZdTl5ct8LiQiKxFP8xvkyFIuuF7EZpaw94ZJ-i5hKrNMWST3SqAJDFJATHQs1H-GPy_hp_1MH5TUz4ZfyBtGT-wuch_0eAdQ"/><div class="flex flex-col"><span class="font-label-lg text-label-lg text-secondary leading-none">SmartCampus 360</span><span class="font-label-sm text-label-sm text-outline mt-space-xs">Intelligence &amp; Resource Hub</span></div></div><nav class="flex flex-col gap-space-md px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg shadow-sm"><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Core</span><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-all bg-primary-container text-on-primary-container font-label-lg shadow-sm" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></div><span class="h-2 w-2 rounded-full bg-primary"></span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="study-planner" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">assignment</span><span class="font-label-md text-label-md">Study Planner</span></div></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="calendar" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">calendar_today</span><span class="font-label-md text-label-md">Calendar</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-study-assistant" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-label-md text-label-md">AI Study Assistant</span></div><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px]">GPT-4o</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Sustainability</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="waterwatch" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-tertiary">water_drop</span><span class="font-label-md text-label-md">WaterWatch</span></div><span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Live</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="my-reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">eco</span><span class="font-label-md text-label-md">My Reports</span></div></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">System</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="analytics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">insights</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-label-md text-label-md">Settings</span></div></a></div></nav></div><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[20px]">nest_eco_leaf</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">Campus Green Tier</span><span class="font-label-sm text-[10px] text-outline">Tier A+ Active</span></div></div><span class="font-label-sm text-label-sm text-tertiary">98%</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-margin"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-10 pr-20 bg-surface-container-low rounded-lg text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search modules, schedules, library telemetry..." type="text"/><div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-0.5 px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]"><span>⌘</span><span>K</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed"><span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span><span class="font-label-sm text-label-sm font-semibold">Dormitory Conservation: -18% gal</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-outline">BioEng '26</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZs8UK0Nfgp2OCbiO3qnhBgGJ-mN-1SR-GGDTfpcmgY2ivEyRnCDrr2x92hP2CPPwBWQ4eBt5mu1dSquq1bQ6LE7bhst1BQrPeSB62a--7pMAkC4SgtLUftlNY9FSMzRQx8G81Fs9CqExRrOLvKNMt26HbJ3DvOtTr_TSMdLrr7PNbPPHeXTdBgF0lPf_21qoVKGtXwqTq91ipqSI1KAUC83tdgre7xbMXbEYllJFlyDRQq1UUYI0h"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-margin py-space-lg w-full"><div class="flex flex-col w-full">
+<!-- Top Greeting & Action Matrix Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-outline mb-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Wednesday, October 16, 2024</span>
+<span class="text-outline-variant font-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-primary">Fall Quarter W4</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Good morning, <span class="font-headline-lg text-headline-lg italic font-normal text-primary">Elena</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">
+        Your academic goals are <strong class="font-label-md text-primary font-semibold">84% on track</strong> this week. There are <span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold">2 active water alerts</span> around Engineering Hall.
+      </p>
+</div>
+<!-- Quick Actions Group -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm hover:bg-primary transition-all active:scale-[0.98]" id="btn-study-log">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Log Study Session</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-tertiary-container text-on-tertiary-container font-label-md text-label-md shadow-sm hover:opacity-95 transition-all active:scale-[0.98]" id="btn-report-water">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+<span>Report Water Issue</span>
+</button>
+</div>
+</div>
+<!-- Key Performance Metrics Deck (4 Bento Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Metric 1: Pending Study Tasks -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_2px_12px_rgba(23,54,93,0.04)] flex flex-col justify-between hover:shadow-[0_4px_16px_rgba(23,54,93,0.08)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Academic Workload</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-on-surface">4</span>
+<span class="font-label-md text-label-md text-outline">due today</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">
+          Org Chem lab &amp; Calc II quiz pending
+        </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-semibold">2 High Priority</span>
+<span class="font-label-sm text-[11px] text-outline">Next: 11:59 PM</span>
+</div>
+</div>
+<!-- Metric 2: Academic Progress & Study Hours -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_2px_12px_rgba(23,54,93,0.04)] flex flex-col justify-between hover:shadow-[0_4px_16px_rgba(23,54,93,0.08)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Syllabus Pacing</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-on-surface">88%</span>
+<span class="font-label-sm text-[11px] text-tertiary font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">north</span>+6%
+          </span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[88%]"></div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-outline font-label-sm text-[11px]">
+<span>14.5 study hrs logged</span>
+<span class="text-primary font-medium">Goal: 18h</span>
+</div>
+</div>
+<!-- Metric 3: Water Watch Incidents -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_2px_12px_rgba(23,54,93,0.04)] flex flex-col justify-between hover:shadow-[0_4px_16px_rgba(23,54,93,0.08)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Campus Alerts</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-on-surface">3</span>
+<span class="font-label-md text-label-md text-outline">Open Reports</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          1 Under Investigation, 2 In Progress
+        </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px] font-semibold">Eng. Hall Hub</span>
+<span class="font-label-sm text-[11px] text-error font-medium">Avg Res: 3.4 hrs</span>
+</div>
+</div>
+<!-- Metric 4: Campus Water Saved -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_2px_12px_rgba(23,54,93,0.04)] flex flex-col justify-between hover:shadow-[0_4px_16px_rgba(23,54,93,0.08)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Water Saved</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-tertiary">1,420</span>
+<span class="font-label-md text-label-md text-outline">gal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          18 leak nodes resolved this month
+        </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-semibold">Campus Tier A+</span>
+<span class="font-label-sm text-[11px] text-tertiary font-medium">Top 5% Dorms</span>
+</div>
+</div>
+</div>
+<!-- Dual Pillar Main Workspace Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PILLAR: Academic Operations Hub (Col span 7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Academic Timeline & Focus Section -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_6px_rgba(23,54,93,0.04)]">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Today's Academic Schedule</h2>
+<p class="font-body-sm text-body-sm text-outline">3 lectures and 1 active AI revision session queued</p>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+<span>Detailed Timetable</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Schedule Items -->
+<div class="flex flex-col gap-space-sm">
+<!-- Class 1 -->
+<div class="p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 text-center pt-0.5">
+<span class="font-label-sm text-[11px] text-outline block leading-none">09:30</span>
+<span class="font-label-sm text-[10px] text-outline-variant block mt-0.5">11:00 AM</span>
+</div>
+<div class="w-1 self-stretch rounded-full bg-primary-container"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h4 class="font-label-lg text-label-lg text-on-surface">Advanced Fluid Dynamics</h4>
+<span class="px-2 py-0.2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px]">Lecture</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">location_on</span>
+                  Engineering Hall B, Room 204 • Prof. Alverez
+                </p>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary hover:bg-surface-container-high font-label-sm text-[11px] font-semibold transition-colors">
+              Notes
+            </button>
+</div>
+<!-- Class 2: AI Study Focus -->
+<div class="p-space-sm rounded-lg bg-primary-fixed/25 hover:bg-primary-fixed/40 transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 text-center pt-0.5">
+<span class="font-label-sm text-[11px] text-primary font-semibold block leading-none">01:15</span>
+<span class="font-label-sm text-[10px] text-primary/70 block mt-0.5">02:45 PM</span>
+</div>
+<div class="w-1 self-stretch rounded-full bg-primary"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h4 class="font-label-lg text-label-lg text-on-surface">AI Study Assistant Focus Session</h4>
+<span class="px-2 py-0.2 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px]">Active Deck</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-primary">auto_awesome</span>
+                  Exam Prep: Thermodynamics Chapter 6 Quiz Revision
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-[11px] font-semibold shadow-xs flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                50m scheduled
+              </span>
+</div>
+</div>
+<!-- Class 3: Submission Deadline -->
+<div class="p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 text-center pt-0.5">
+<span class="font-label-sm text-[11px] text-error font-semibold block leading-none">04:00</span>
+<span class="font-label-sm text-[10px] text-outline block mt-0.5">PM DUE</span>
+</div>
+<div class="w-1 self-stretch rounded-full bg-error"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h4 class="font-label-lg text-label-lg text-on-surface">Eco-Sensor IoT Node Design Submission</h4>
+<span class="px-2 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px]">Project Milestone</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">group</span>
+                  BioEng Group 4 • Canvas Portal Final Upload
+                </p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-sm text-label-sm font-semibold transition-colors">
+              Submit
+            </button>
+</div>
+</div>
+<!-- Task Checklist Subsection -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/50 -mx-space-lg px-space-lg pb-space-sm rounded-b-xl">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Actionable Checklist</span>
+<span class="font-label-sm text-[11px] text-outline">2/5 Completed</span>
+</div>
+<div class="space-y-space-xs">
+<label class="flex items-center justify-between p-2 rounded bg-surface-container-lowest cursor-pointer hover:bg-surface transition-colors">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary/20 accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm line-through text-outline">Submit Lab Safety Re-certification Form</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-[10px]">Done</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded bg-surface-container-lowest cursor-pointer hover:bg-surface transition-colors">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary/20 accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Review Organic Chemistry Problem Set #7</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-semibold">Due 11:59 PM</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded bg-surface-container-lowest cursor-pointer hover:bg-surface transition-colors">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary/20 accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Verify IoT Water Flow telemetry schema</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px]">High Priority</span>
+</label>
+</div>
+</div>
+</section>
+<!-- Weekly Study Analytics Interactive Chart Card -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_6px_rgba(23,54,93,0.04)]">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Weekly Study Activity &amp; Focus Hours</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px]">Target: 4.0h/day</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Total 27.2 hours logged this cycle across 4 active courses</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-2.5 py-1 text-on-surface rounded bg-surface-container-lowest font-label-sm text-[11px] shadow-xs">Hours</button>
+<button class="px-2.5 py-1 text-outline hover:text-on-surface font-label-sm text-[11px]">Tasks</button>
+</div>
+</div>
+<!-- SVG Bar Chart with Hover Tooltip styling & Benchmark Guideline -->
+<div class="relative w-full pt-4">
+<!-- Floating Interactive Tooltip mockup (like Reference 1) -->
+<div class="absolute top-1 right-28 bg-inverse-surface text-inverse-on-surface px-3 py-1.5 rounded-lg shadow-md pointer-events-none z-10 flex flex-col">
+<span class="font-label-sm text-[10px] text-outline-variant uppercase">Thursday Peak</span>
+<span class="font-label-md text-label-md font-semibold">5.1 Focus Hours</span>
+</div>
+<svg class="w-full h-44 overflow-visible" fill="none" viewbox="0 0 540 180" xmlns="http://www.w3.org/2000/svg">
+<!-- Background horizontal grid guides -->
+<line stroke="#dee9ff" stroke-dasharray="3 3" stroke-width="1" x1="30" x2="520" y1="20" y2="20"></line>
+<text fill="#737786" font-family="Inter" font-size="9" text-anchor="end" x="20" y="24">6h</text>
+<line stroke="#dee9ff" stroke-dasharray="3 3" stroke-width="1" x1="30" x2="520" y1="60" y2="60"></line>
+<text fill="#737786" font-family="Inter" font-size="9" text-anchor="end" x="20" y="64">4h</text>
+<!-- 4.0h Benchmark Line -->
+<line stroke="#0055ce" stroke-dasharray="4 2" stroke-width="1.5" x1="30" x2="520" y1="60" y2="60"></line>
+<line stroke="#dee9ff" stroke-dasharray="3 3" stroke-width="1" x1="30" x2="520" y1="100" y2="100"></line>
+<text fill="#737786" font-family="Inter" font-size="9" text-anchor="end" x="20" y="104">2h</text>
+<line stroke="#c2c6d7" stroke-width="1" x1="30" x2="520" y1="140" y2="140"></line>
+<text fill="#737786" font-family="Inter" font-size="9" text-anchor="end" x="20" y="144">0h</text>
+<!-- Mon: 3.5h (height 70) -->
+<rect class="hover:fill-primary-container transition-all cursor-pointer" fill="#b4d0ff" height="70" rx="6" width="34" x="58" y="70"></rect>
+<text fill="#424654" font-family="Inter" font-size="11" font-weight="500" text-anchor="middle" x="75" y="158">Mon</text>
+<text fill="#737786" font-family="Inter" font-size="10" text-anchor="middle" x="75" y="62">3.5h</text>
+<!-- Tue: 4.8h (height 96) -->
+<rect class="hover:opacity-90 transition-all cursor-pointer" fill="#2f6fed" height="96" rx="6" width="34" x="126" y="44"></rect>
+<text fill="#424654" font-family="Inter" font-size="11" font-weight="500" text-anchor="middle" x="143" y="158">Tue</text>
+<text fill="#0055ce" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="143" y="36">4.8h</text>
+<!-- Wed: 3.2h (height 64) -->
+<rect class="hover:fill-primary-container transition-all cursor-pointer" fill="#b4d0ff" height="64" rx="6" width="34" x="194" y="76"></rect>
+<text fill="#0055ce" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="211" y="158">Today</text>
+<text fill="#737786" font-family="Inter" font-size="10" text-anchor="middle" x="211" y="68">3.2h</text>
+<!-- Thu: 5.1h (height 102) -->
+<rect class="hover:opacity-90 transition-all cursor-pointer" fill="#07866e" height="102" rx="6" width="34" x="262" y="38"></rect>
+<text fill="#424654" font-family="Inter" font-size="11" font-weight="500" text-anchor="middle" x="279" y="158">Thu</text>
+<text fill="#006b57" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="279" y="30">5.1h</text>
+<!-- Fri: 2.0h (height 40) -->
+<rect class="hover:fill-primary-container transition-all cursor-pointer" fill="#dee9ff" height="40" rx="6" width="34" x="330" y="100"></rect>
+<text fill="#424654" font-family="Inter" font-size="11" font-weight="500" text-anchor="middle" x="347" y="158">Fri</text>
+<text fill="#737786" font-family="Inter" font-size="10" text-anchor="middle" x="347" y="92">2.0h</text>
+<!-- Sat: 4.0h (height 80) -->
+<rect class="hover:fill-primary-container transition-all cursor-pointer" fill="#b4d0ff" height="80" rx="6" width="34" x="398" y="60"></rect>
+<text fill="#424654" font-family="Inter" font-size="11" font-weight="500" text-anchor="middle" x="415" y="158">Sat</text>
+<text fill="#737786" font-family="Inter" font-size="10" text-anchor="middle" x="415" y="52">4.0h</text>
+<!-- Sun: 2.5h (height 50) -->
+<rect class="hover:fill-primary-container transition-all cursor-pointer" fill="#dee9ff" height="50" rx="6" width="34" x="466" y="90"></rect>
+<text fill="#424654" font-family="Inter" font-size="11" font-weight="500" text-anchor="middle" x="483" y="158">Sun</text>
+<text fill="#737786" font-family="Inter" font-size="10" text-anchor="middle" x="483" y="82">2.5h</text>
+</svg>
+</div>
+<div class="mt-space-sm pt-space-sm flex items-center justify-between text-outline font-label-sm text-[11px]">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container inline-block"></span> Standard Days
+            <span class="w-2.5 h-2.5 rounded-sm bg-tertiary-container inline-block ml-2"></span> High Retention Session
+          </span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Peak efficiency: 01:00 PM - 03:30 PM
+          </span>
+</div>
+</section>
+</div>
+<!-- RIGHT PILLAR: WaterWatch Conservation & Campus Stewardship (Col span 5) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Live WaterWatch Monitor & Incidents Deck -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_6px_rgba(23,54,93,0.04)]">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-tertiary animate-ping"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Campus WaterWatch</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-semibold">Live Telemetry</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Real-time incident log reported by students and sensor nodes</p>
+<!-- Segmented Filter Tabs -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg mb-space-md">
+<button class="flex-1 py-1 text-center font-label-sm text-[11px] rounded bg-surface-container-lowest text-on-surface shadow-xs font-semibold">All Issues (3)</button>
+<button class="flex-1 py-1 text-center font-label-sm text-[11px] rounded text-outline hover:text-on-surface transition-colors">My Hall</button>
+<button class="flex-1 py-1 text-center font-label-sm text-[11px] rounded text-outline hover:text-on-surface transition-colors">Active Leaks (2)</button>
+</div>
+<!-- Incidents List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Incident 1: Sprinkler High Severity -->
+<div class="p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-colors">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">warning</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface leading-snug">Irrigation Sprinkler Malfunction / Runoff</h4>
+<p class="font-body-sm text-[12px] text-outline mt-0.5">North Lawn Quad • Zone 4B</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-bold">High</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs font-label-sm text-[11px] text-outline">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">sync</span> Under Review by Facilities
+              </span>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[15px]">thumb_up</span>
+<span>28 Upvotes</span>
+</button>
+</div>
+</div>
+<!-- Incident 2: Restroom Drip -->
+<div class="p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-colors">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">water_damage</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface leading-snug">Low Pressure &amp; Drip</h4>
+<p class="font-body-sm text-[12px] text-outline mt-0.5">Science Complex • 3rd Fl Restroom West</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px]">Normal</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs font-label-sm text-[11px] text-outline">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">engineering</span> Tech Dispatched (15m ago)
+              </span>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[15px]">thumb_up</span>
+<span>12 Upvotes</span>
+</button>
+</div>
+</div>
+<!-- Incident 3: Drinking Fountain Resolved -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors opacity-80">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">check_circle</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface leading-snug">Drinking Fountain Filter Replacement</h4>
+<p class="font-body-sm text-[12px] text-outline mt-0.5">Student Union • 1st Floor Atrium</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-semibold">Resolved</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs font-label-sm text-[11px] text-outline">
+<span class="text-outline">Resolved Yesterday by Maint Team</span>
+<span class="text-tertiary font-medium">9.4 gal/hr preserved</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-2 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">map</span>
+<span>Open Interactive Campus Map (4 Nodes)</span>
+</button>
+</section>
+<!-- Water Conservation Tip & Campus Challenge Widget -->
+<section class="p-space-lg rounded-xl bg-gradient-to-br from-tertiary-fixed-dim/20 to-surface-container-lowest shadow-[0_1px_6px_rgba(23,54,93,0.04)] relative overflow-hidden">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">energy_savings_leaf</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-semibold">Active Campaign</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-sm">Campus Chill Tap Challenge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Aim to save 5 gallons daily by reporting dormitory aerator leaks and utilizing campus sensor-refill stations.
+        </p>
+<!-- Challenge Progress & Participants -->
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-lowest/80 backdrop-blur-sm shadow-xs">
+<div class="flex items-center justify-between mb-1.5 font-label-sm text-[11px]">
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">groups</span> 420 Students Active
+            </span>
+<span class="text-tertiary font-bold">68% of 2,500 gal Goal</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full w-[68%] transition-all"></div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-2 px-space-md rounded-lg bg-tertiary-container text-on-tertiary-container hover:bg-tertiary font-label-md text-label-md transition-all shadow-sm active:scale-[0.98] text-center" id="btn-join-challenge">
+            Join This Week's Challenge
+          </button>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-outline hover:text-on-surface transition-colors" title="Challenge Details">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+</section>
+<!-- Mini Campus Library & Water Telemetry Card (Inspiring Ref 1 Bento) -->
+<section class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_6px_rgba(23,54,93,0.04)] flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">local_library</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h5 class="font-label-md text-label-md text-on-surface">Library Quiet Floor Quiet Zone</h5>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<p class="font-body-sm text-[11px] text-outline">Low crowd index • 4 open desks available</p>
+</div>
+</div>
+<a class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-[11px] hover:bg-surface-container-highest transition-colors" href="#">
+          Reserve
+        </a>
+</section>
+</div>
+</div>
+<!-- Interactive Modal Mockups (Scripted Micro-interactions) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-50 hidden items-center justify-center p-space-md" id="modal-container">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-xl animate-in fade-in zoom-in duration-150">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[24px]">water_drop</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Report Water Incident</h3>
+</div>
+<button class="text-outline hover:text-on-surface p-1 rounded-md" id="modal-close">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Submit facility telemetry or physical leak reports directly to campus response staff.</p>
+<form class="space-y-space-sm" id="water-report-form" onsubmit="event.preventDefault(); alert('Report filed successfully to Campus Facilities Dispatch!'); document.getElementById('modal-container').classList.add('hidden'); document.getElementById('modal-container').classList.remove('flex');">
+<div>
+<label class="block font-label-sm text-[11px] text-outline mb-1 uppercase tracking-wider">Campus Location</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface text-on-surface font-body-sm border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="e.g. Science Complex 2nd Floor, Room 210" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-[11px] text-outline mb-1 uppercase tracking-wider">Issue Type</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface text-on-surface font-body-sm border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>Leaking Faucet / Fixture</option>
+<option>Irrigation Runoff / Broken Sprinkler</option>
+<option>Fountain Filter Pressure Low</option>
+<option>Restroom Overflow / Structural Leak</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-[11px] text-outline mb-1 uppercase tracking-wider">Estimated Severity</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="p-2 rounded bg-surface text-center cursor-pointer hover:bg-surface-container font-label-sm text-[11px] flex items-center justify-center">
+<input checked="" class="mr-1 accent-primary" name="sev" type="radio"/> Low
+            </label>
+<label class="p-2 rounded bg-surface text-center cursor-pointer hover:bg-surface-container font-label-sm text-[11px] flex items-center justify-center">
+<input class="mr-1 accent-primary" name="sev" type="radio"/> Medium
+            </label>
+<label class="p-2 rounded bg-surface text-center cursor-pointer hover:bg-surface-container font-label-sm text-[11px] text-error font-semibold flex items-center justify-center">
+<input class="mr-1 accent-error" name="sev" type="radio"/> High
+            </label>
+</div>
+</div>
+<div class="pt-space-sm flex justify-end gap-space-xs">
+<button class="px-4 py-2 rounded-lg text-outline hover:text-on-surface font-label-md text-label-md" id="modal-cancel" type="button">Cancel</button>
+<button class="px-4 py-2 rounded-lg bg-tertiary-container text-on-tertiary-container hover:bg-tertiary font-label-md text-label-md shadow-sm" type="submit">Dispatch Report</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+    (function() {
+      const modal = document.getElementById('modal-container');
+      const btnReport = document.getElementById('btn-report-water');
+      const btnClose = document.getElementById('modal-close');
+      const btnCancel = document.getElementById('modal-cancel');
+      const btnJoin = document.getElementById('btn-join-challenge');
+      const btnStudy = document.getElementById('btn-study-log');
+
+      if (btnReport && modal) {
+        btnReport.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      }
+
+      const hideModal = () => {
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      };
+
+      if (btnClose) btnClose.addEventListener('click', hideModal);
+      if (btnCancel) btnCancel.addEventListener('click', hideModal);
+
+      if (btnJoin) {
+        btnJoin.addEventListener('click', () => {
+          btnJoin.innerText = 'Challenge Joined! (+50 Green Pts)';
+          btnJoin.classList.remove('bg-tertiary-container');
+          btnJoin.classList.add('bg-tertiary');
+          btnJoin.disabled = true;
+        });
+      }
+
+      if (btnStudy) {
+        btnStudy.addEventListener('click', () => {
+          alert('Study timer started: 25:00 Pomodoro interval active for Thermodynamics!');
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

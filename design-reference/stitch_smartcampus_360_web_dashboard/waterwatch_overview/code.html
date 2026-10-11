@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-surface":"#263142","inverse-on-surface":"#ebf1ff","surface-dim":"#cfdaf1","primary":"#0055ce","on-primary-container":"#ffffff","on-tertiary-fixed":"#002019","secondary-container":"#b4d0ff","on-tertiary-fixed-variant":"#005141","on-secondary-fixed-variant":"#2b486f","tertiary-fixed":"#90f5d8","secondary":"#435f89","tertiary":"#006b57","on-primary-fixed-variant":"#0040a0","surface-bright":"#f9f9ff","on-tertiary":"#ffffff","surface":"#f9f9ff","outline":"#737786","background":"#f9f9ff","surface-variant":"#d8e3fa","error":"#ba1a1a","tertiary-container":"#07866e","secondary-fixed":"#d5e3ff","primary-container":"#2f6fed","on-secondary-fixed":"#001c3b","on-primary":"#ffffff","error-container":"#ffdad6","primary-fixed-dim":"#b1c5ff","on-surface":"#111c2c","on-error":"#ffffff","on-error-container":"#93000a","surface-container-low":"#f0f3ff","tertiary-fixed-dim":"#73d8bd","inverse-primary":"#b1c5ff","on-primary-fixed":"#001847","on-secondary-container":"#3d5982","on-tertiary-container":"#ffffff","surface-container-lowest":"#ffffff","on-surface-variant":"#424654","secondary-fixed-dim":"#acc8f7","surface-container-highest":"#d8e3fa","outline-variant":"#c2c6d7","surface-container-high":"#dee9ff","surface-container":"#e7eeff","on-secondary":"#ffffff","surface-tint":"#0056d0","on-background":"#111c2c","primary-fixed":"#dae2ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","margin":"2rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","space-md":"1rem","gutter":"1.25rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem"},"fontFamily":{"label-md":["Inter"],"headline-lg":["Newsreader"],"display-lg-mobile":["Newsreader"],"metric-val":["Inter"],"label-lg":["Inter"],"display-lg":["Newsreader"],"headline-sm":["Newsreader"],"headline-md":["Newsreader"],"body-sm":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"body-md":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"500"}],"metric-val":["28px",{"lineHeight":"32px","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"48px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md overflow-y-auto"><div class="flex flex-col"><div class="px-space-md pb-space-lg flex items-center gap-space-sm"><img alt="SmartCampus 360 Full Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wte366E2yhap7plNb2kTPOOTc3cYO77KJT5sT_WRlrN5ZmczKaaBtwQdUrSxyUSl5W3ZfyROPvX5-KXEvvNKO-SZMJn5wX0d-_MezshMxhtn1H_yAc2akuV2QcS8Fw-qcG_Uie1wv8pxuuqPHiXek2GfZdTl5ct8LiQiKxFP8xvkyFIuuF7EZpaw94ZJ-i5hKrNMWST3SqAJDFJATHQs1H-GPy_hp_1MH5TUz4ZfyBtGT-wuch_0eAdQ"/><div class="flex flex-col"><span class="font-label-lg text-label-lg text-secondary leading-none">SmartCampus 360</span><span class="font-label-sm text-label-sm text-outline mt-space-xs">Intelligence &amp; Resource Hub</span></div></div><nav class="flex flex-col gap-space-md px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg shadow-sm"><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Core</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="study-planner" href="#"><span class="font-label-md text-label-md">Study Planner</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="syllabus-tracker" href="#"><span class="font-label-md text-label-md">Syllabus Tracker</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="academic-calendar" href="#"><span class="font-label-md text-label-md">Academic Calendar</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-study-assistant" href="#"><span class="font-label-md text-label-md">AI Study Assistant</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="focus-timer" href="#"><span class="font-label-md text-label-md">Focus Timer</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">Sustainability</span><a aria-current="page" class="flex items-center px-space-sm py-space-xs rounded-lg transition-all bg-primary-container text-on-primary-container font-label-lg shadow-sm" data-path="waterwatch" href="#"><span class="font-label-md text-label-md">WaterWatch</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="report-water-issue" href="#"><span class="font-label-md text-label-md">Report Water Issue</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="my-reports" href="#"><span class="font-label-md text-label-md">My Reports</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline tracking-wider uppercase">System</span><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="font-label-md text-label-md">Analytics</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="font-label-md text-label-md">Settings</span></a></div></nav></div><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[20px]">nest_eco_leaf</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">Campus Green Tier</span><span class="font-label-sm text-[10px] text-outline">Tier A+ Active</span></div></div><span class="font-label-sm text-label-sm text-tertiary">98%</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-margin"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-10 pr-20 bg-surface-container-low rounded-lg text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search modules, schedules, library telemetry..." type="text"/><div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-0.5 px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]"><span>⌘</span><span>K</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed"><span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span><span class="font-label-sm text-label-sm font-semibold">Dormitory Conservation: -18% gal</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Elena Vance</span><span class="font-label-sm text-label-sm text-outline">BioEng '26</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZs8UK0Nfgp2OCbiO3qnhBgGJ-mN-1SR-GGDTfpcmgY2ivEyRnCDrr2x92hP2CPPwBWQ4eBt5mu1dSquq1bQ6LE7bhst1BQrPeSB62a--7pMAkC4SgtLUftlNY9FSMzRQx8G81Fs9CqExRrOLvKNMt26HbJ3DvOtTr_TSMdLrr7PNbPPHeXTdBgF0lPf_21qoVKGtXwqTq91ipqSI1KAUC83tdgre7xbMXbEYllJFlyDRQq1UUYI0h"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-margin py-space-lg w-full"><div class="flex flex-col w-full">
+<!-- Top Bar: Academic Breadcrumb & Dataset Context -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+        Sustainability Workstation
+      </span>
+<span>•</span>
+<span class="text-secondary">WaterWatch Campus Facilities Log</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant uppercase tracking-wider font-semibold">Demo Dataset</span>
+</div>
+<!-- Mode Badge -->
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-medium text-secondary">Demo Data Mode — Incident Log Mockup (No Hardware Sensors Connected)</span>
+</div>
+</div>
+<!-- Main Hero Card / Action Header -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg sm:p-space-xl shadow-sm mb-space-lg">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-tertiary-fixed-dim/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 -bottom-20 w-64 h-64 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-space-xs py-0.5 rounded text-tertiary font-label-sm text-label-sm bg-tertiary-fixed font-bold tracking-wide uppercase">
+            Campus Infrastructure Care
+          </span>
+<span class="font-label-sm text-label-sm text-outline">Fall Quarter Cycle 2024</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs">
+          WaterWatch Overview &amp; Incident Tracker
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Crowdsourced campus water infrastructure reporting, facilities maintenance dispatching, and recurring leak monitoring across instructional halls, student housing, and athletic grounds.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm flex-shrink-0">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all" data-path="report-water-issue" href="#">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+<span>+ Report Water Issue</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" data-path="my-reports" href="#">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>View My Filings</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Key Metrics Row (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Total Reports -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Total Reports Logged</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-on-surface" id="stat-total">84</span>
+<span class="font-label-md text-label-md text-tertiary font-medium">reports</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">All-time active records for Fall 2024 academic term.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-xs rounded-b-xl">
+<span class="font-label-sm text-[10px] text-outline">Software incident log entries from students &amp; staff.</span>
+</div>
+</div>
+<!-- Card 2: Open Issues -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Open / Triage</span>
+<span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+            Urgent Triage
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-error" id="stat-open">14</span>
+<span class="font-label-md text-label-md text-on-surface-variant">tickets</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Awaiting facilities intake and initial priority grading.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-xs rounded-b-xl flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-outline">Avg intake velocity: 42 min</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</div>
+</div>
+<!-- Card 3: In-Progress Issues -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">In-Progress Repairs</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+            Assigned
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-primary" id="stat-progress">23</span>
+<span class="font-label-md text-label-md text-on-surface-variant">dispatches</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Facilities staff on-site, valve parts ordered, or work orders active.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-xs rounded-b-xl flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-outline">18 maintenance staff active</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+</div>
+<!-- Card 4: Resolved Issues -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Resolved &amp; Closed</span>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span> Closed
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-val text-metric-val text-tertiary" id="stat-resolved">47</span>
+<span class="font-label-md text-label-md text-tertiary font-medium">resolved</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Fixed, double-checked for leaks, and signed off by lead supervisors.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-xs rounded-b-xl flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-outline">56.0% resolution completion</span>
+<span class="font-label-sm text-[10px] text-tertiary font-bold">Passed QA</span>
+</div>
+</div>
+</div>
+<!-- Visual Breakdowns: Split Bento Layout (Building Summary & Recurring Hotspots) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Left: Building-Wise Summary (7 Cols) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Facilities Distribution</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Building-Wise Incident Summary</h2>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-on-surface-variant"><span class="w-2.5 h-2.5 rounded-sm bg-error"></span> Open</span>
+<span class="flex items-center gap-1 text-on-surface-variant"><span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span> In-Progress</span>
+<span class="flex items-center gap-1 text-on-surface-variant"><span class="w-2.5 h-2.5 rounded-sm bg-tertiary-container"></span> Resolved</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Breakdown of software work orders filed across key academic and auxiliary sectors. Progress bars show resolution distribution per facility.
+      </p>
+<!-- Building Rows -->
+<div class="flex flex-col gap-space-md">
+<!-- Building 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between font-label-md text-label-md mb-1.5">
+<span class="font-semibold text-on-surface">Engineering Hall (E-Quad)</span>
+<span class="text-on-surface-variant">24 total <span class="text-outline font-normal">(5 open • 7 active • 12 done)</span></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden">
+<div class="bg-error h-full" style="width: 20.8%;" title="Open: 5"></div>
+<div class="bg-primary-container h-full" style="width: 29.2%;" title="In-Progress: 7"></div>
+<div class="bg-tertiary-container h-full" style="width: 50.0%;" title="Resolved: 12"></div>
+</div>
+</div>
+<!-- Building 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between font-label-md text-label-md mb-1.5">
+<span class="font-semibold text-on-surface">Science Complex &amp; Labs</span>
+<span class="text-on-surface-variant">19 total <span class="text-outline font-normal">(3 open • 5 active • 11 done)</span></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden">
+<div class="bg-error h-full" style="width: 15.8%;" title="Open: 3"></div>
+<div class="bg-primary-container h-full" style="width: 26.3%;" title="In-Progress: 5"></div>
+<div class="bg-tertiary-container h-full" style="width: 57.9%;" title="Resolved: 11"></div>
+</div>
+</div>
+<!-- Building 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between font-label-md text-label-md mb-1.5">
+<span class="font-semibold text-on-surface">North Student Residences</span>
+<span class="text-on-surface-variant">16 total <span class="text-outline font-normal">(4 open • 4 active • 8 done)</span></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden">
+<div class="bg-error h-full" style="width: 25.0%;" title="Open: 4"></div>
+<div class="bg-primary-container h-full" style="width: 25.0%;" title="In-Progress: 4"></div>
+<div class="bg-tertiary-container h-full" style="width: 50.0%;" title="Resolved: 8"></div>
+</div>
+</div>
+<!-- Building 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between font-label-md text-label-md mb-1.5">
+<span class="font-semibold text-on-surface">University Library &amp; West Wing</span>
+<span class="text-on-surface-variant">13 total <span class="text-outline font-normal">(1 open • 4 active • 8 done)</span></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden">
+<div class="bg-error h-full" style="width: 7.7%;" title="Open: 1"></div>
+<div class="bg-primary-container h-full" style="width: 30.8%;" title="In-Progress: 4"></div>
+<div class="bg-tertiary-container h-full" style="width: 61.5%;" title="Resolved: 8"></div>
+</div>
+</div>
+<!-- Building 5 & 6 (Split Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between font-label-md text-label-md mb-1.5">
+<span class="font-semibold text-on-surface">Athletics &amp; Rec Center</span>
+<span class="text-on-surface-variant">8 total</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container flex overflow-hidden mb-1">
+<div class="bg-error h-full" style="width: 12.5%;"></div>
+<div class="bg-primary-container h-full" style="width: 37.5%;"></div>
+<div class="bg-tertiary-container h-full" style="width: 50.0%;"></div>
+</div>
+<span class="font-label-sm text-[10px] text-outline">1 open • 3 active • 4 done</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between font-label-md text-label-md mb-1.5">
+<span class="font-semibold text-on-surface">Dining Commons</span>
+<span class="text-on-surface-variant">4 total</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container flex overflow-hidden mb-1">
+<div class="bg-error h-full" style="width: 0%;"></div>
+<div class="bg-primary-container h-full" style="width: 25.0%;"></div>
+<div class="bg-tertiary-container h-full" style="width: 75.0%;"></div>
+</div>
+<span class="font-label-sm text-[10px] text-outline">0 open • 1 active • 3 done</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Recurring Hotspots (5 Cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Priority Attention</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recurring Hotspots</h2>
+</div>
+<span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+            Top 5
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Repeated reports logged at identical fixtures or sub-assemblies requiring root-cause overhaul.
+        </p>
+<!-- Hotspot Item List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Hotspot 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Science Complex 3F Men's Restroom</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Aerator leakage &amp; low drain pressure</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-error/10 text-error font-label-sm text-label-sm font-semibold flex-shrink-0">
+                6 reports
+              </span>
+</div>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-[11px]">
+<span class="text-primary font-medium">Work order #W-412 active</span>
+<span class="text-outline">Assigned to Plumber Team B</span>
+</div>
+</div>
+<!-- Hotspot 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">North Lawn Quad Irrigation Line B</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Sprinkler runoff &amp; sidewalk pooling</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container/50 text-secondary font-label-sm text-label-sm font-semibold flex-shrink-0">
+                5 reports
+              </span>
+</div>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-[11px]">
+<span class="text-secondary font-medium">Valve replacement scheduled</span>
+<span class="text-outline">Grounds &amp; Landscaping</span>
+</div>
+</div>
+<!-- Hotspot 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Engineering Hall Basement Lab</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Pipe connector seepage under sink #2</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold flex-shrink-0">
+                4 reports
+              </span>
+</div>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-[11px]">
+<span class="text-tertiary font-medium">Resolved Oct 14</span>
+<span class="text-outline">Coupler resealed</span>
+</div>
+</div>
+<!-- Hotspot 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Student Union 1F Hydration Station</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Chiller drip &amp; recurring filter alarm</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold flex-shrink-0">
+                4 reports
+              </span>
+</div>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-[11px]">
+<span class="text-tertiary font-medium">Filter cartridge swapped</span>
+<span class="text-outline">Sensor reset complete</span>
+</div>
+</div>
+<!-- Hotspot 5 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">West Dormitory Tower 2 Laundry</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Drain line overflow behind unit 4</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold flex-shrink-0">
+                3 reports
+              </span>
+</div>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-[11px]">
+<span class="text-primary font-medium">Maintenance inspecting</span>
+<span class="text-outline">Housing Facilities</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Hotspots auto-ranked by campus report count</span>
+<button class="font-label-sm text-label-sm text-tertiary hover:underline font-semibold" onclick="alert('Hotspot Root Cause Audit Exported for Demo')">
+          Export Audit Log →
+        </button>
+</div>
+</div>
+</div>
+<!-- Recent Incident Reports Log / Interactive Table Section -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm mb-space-lg">
+<!-- Header with Filters -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Live Software Dispatches</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/60 text-secondary font-label-sm text-[11px] font-semibold">
+            6 Sample Display Items
+          </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Incident Reports &amp; Facilities Triage</h2>
+</div>
+<!-- Quick Filter Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs" id="statusFilterGroup">
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-primary text-on-primary font-semibold transition-colors" data-filter="all">All (6)</button>
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" data-filter="open">Open (2)</button>
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" data-filter="progress">In Progress (2)</button>
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" data-filter="resolved">Resolved (2)</button>
+</div>
+</div>
+<!-- Secondary Filter Bar (Building, Issue Type, Search) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm p-space-sm rounded-lg bg-surface-container-low mb-space-md">
+<!-- Search Input -->
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-tertiary/20" id="incidentSearch" placeholder="Search report ID, room, or issue..." type="text"/>
+</div>
+<!-- Building Dropdown -->
+<div>
+<select class="w-full h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-tertiary/20" id="buildingFilter">
+<option value="all">All Buildings &amp; Grounds</option>
+<option value="Engineering Hall">Engineering Hall</option>
+<option value="Science Complex">Science Complex</option>
+<option value="North Quad">North Quad</option>
+<option value="East Hall">East Hall</option>
+<option value="Main Library">Main Library</option>
+<option value="BioEngineering">BioEngineering Lab Annex</option>
+</select>
+</div>
+<!-- Issue Type Dropdown -->
+<div>
+<select class="w-full h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-tertiary/20" id="issueTypeFilter">
+<option value="all">All Issue Categories</option>
+<option value="Leaking Tap">Leaking Tap</option>
+<option value="Broken Pipe">Broken Pipe</option>
+<option value="Overflowing Tank">Overflowing Tank</option>
+<option value="No Water">No Water</option>
+<option value="Other">Other / Shutoff Valve</option>
+</select>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="incidentsTable">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-md">Issue ID &amp; Type</th>
+<th class="py-space-sm px-space-md">Facility &amp; Location</th>
+<th class="py-space-sm px-space-md">Priority</th>
+<th class="py-space-sm px-space-md">Report Date &amp; Submitter</th>
+<th class="py-space-sm px-space-md">Facilities Status</th>
+<th class="py-space-sm px-space-md text-right rounded-r-md">Action</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors incident-row" data-building="Engineering Hall" data-status="progress" data-type="Leaking Tap">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[18px]">faucet</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">REP-1092</span>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Leaking Tap</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Engineering Hall</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Rm 204 • Restroom Sink #3</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/50 text-secondary font-label-sm text-[11px] font-semibold">
+                Medium
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Oct 16, 2024</div>
+<div class="text-outline font-label-sm text-[11px]">Elena Vance (Student)</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+                Tech Dispatched
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" onclick="alert('Viewing Demo Ticket REP-1092')">
+                View Details
+              </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors incident-row" data-building="North Quad" data-status="open" data-type="Broken Pipe">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-error-container/40 text-error">
+<span class="material-symbols-outlined text-[18px]">plumbing</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">REP-1091</span>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Broken Pipe</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">North Quad Grounds</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Lawn Valve Box B-4</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold">
+                High Priority
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Oct 16, 2024</div>
+<div class="text-outline font-label-sm text-[11px]">Marcus Reed (Staff)</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+                Facilities En Route
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" onclick="alert('Viewing Demo Ticket REP-1091')">
+                View Details
+              </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors incident-row" data-building="Science Complex" data-status="progress" data-type="Overflowing Tank">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[18px]">water</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">REP-1088</span>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Overflowing Tank</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Science Complex</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Roof Storage Utility Hub</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold">
+                High Priority
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Oct 15, 2024</div>
+<div class="text-outline font-label-sm text-[11px]">Lab Assistant Lee</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                In Progress / Valve Shut
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" onclick="alert('Viewing Demo Ticket REP-1088')">
+                View Details
+              </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors incident-row" data-building="East Hall" data-status="open" data-type="No Water">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[18px]">water_damage</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">REP-1085</span>
+<div class="text-on-surface-variant font-label-sm text-label-sm">No Water Supply</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">East Hall</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Restroom 2A West Wing</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/50 text-secondary font-label-sm text-[11px] font-semibold">
+                Medium
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Oct 14, 2024</div>
+<div class="text-outline font-label-sm text-[11px]">Dorm Advisor Sarah</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Open / Pending Review
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" onclick="alert('Viewing Demo Ticket REP-1085')">
+                View Details
+              </button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors incident-row" data-building="Main Library" data-status="resolved" data-type="Leaking Tap">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-tertiary-fixed/40 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">water_bottle</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">REP-1079</span>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Leaking Tap</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">Main Library</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">2F Hydration Station by Stacks</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold">
+                Low
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Oct 12, 2024</div>
+<div class="text-outline font-label-sm text-[11px]">Alex Chen (Student)</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Resolved &amp; Tested
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" onclick="alert('Viewing Demo Ticket REP-1079')">
+                View Log
+              </button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors incident-row" data-building="BioEngineering" data-status="resolved" data-type="Other">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-tertiary-fixed/40 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">build</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">REP-1074</span>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Faulty Shutoff Valve</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium text-on-surface">BioEngineering Lab Annex</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Autoclave Wash Station #1</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/50 text-secondary font-label-sm text-[11px] font-semibold">
+                Medium
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Oct 10, 2024</div>
+<div class="text-outline font-label-sm text-[11px]">Elena Vance (Student)</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Resolved &amp; Tested
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-colors" onclick="alert('Viewing Demo Ticket REP-1074')">
+                View Log
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination demo -->
+<div class="pt-space-md mt-space-md flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span>Showing</span>
+<span class="font-semibold text-on-surface" id="visibleCount">6</span>
+<span>of 84 total logged records in demo partition</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface opacity-50 cursor-not-allowed">Previous</button>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-semibold">1</button>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="alert('Demo Page 2')">2</button>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="alert('Demo Page 3')">3</button>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="alert('Demo Page Next')">Next</button>
+</div>
+</div>
+</div>
+<!-- Visual Callout: Academic Campus Sustainability & Dispatch Protocol -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface mb-0.5">Crowdsourced Verification</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Campus members upvote or attach photographic evidence to accelerate dispatch triage for fast repair turnaround.
+        </p>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">engineering</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface mb-0.5">Direct Facilities Routing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Tickets convert directly to Facilities Work Orders with geocoded campus room numbers and maintenance priority flags.
+        </p>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">event_repeat</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface mb-0.5">Proactive Hotspot Audits</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          When a fixture logs 3+ reports in 30 days, supervisors are prompted to replace valves rather than perform temporary patches.
+        </p>
+</div>
+</div>
+</div>
+<!-- Mandatory Sample Data Notice Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low text-on-surface-variant shadow-sm flex items-center gap-space-md">
+<span class="material-symbols-outlined text-tertiary text-[24px] flex-shrink-0">info</span>
+<div class="font-body-sm text-body-sm">
+<strong class="font-semibold text-on-surface">Campus Maintenance Disclosure &amp; System Scope:</strong>
+      Data displayed reflects mock student submissions for hackathon demonstration. This portal functions strictly as a manual software incident and facilities dispatch tracking system and does not interface with municipal, pipe-level flow telemetry, or automated IoT flow sensors.
+    </div>
+</div>
+</div>
+<!-- Inline Filtering Script for Table Micro-Interactions -->
+<script>
+  (function() {
+    const statusBtns = document.querySelectorAll('#statusFilterGroup button');
+    const buildingSelect = document.getElementById('buildingFilter');
+    const typeSelect = document.getElementById('issueTypeFilter');
+    const searchInput = document.getElementById('incidentSearch');
+    const rows = document.querySelectorAll('.incident-row');
+    const visibleCountSpan = document.getElementById('visibleCount');
+
+    let currentStatus = 'all';
+
+    function filterTable() {
+      let visible = 0;
+      const bFilter = buildingSelect ? buildingSelect.value.toLowerCase() : 'all';
+      const tFilter = typeSelect ? typeSelect.value.toLowerCase() : 'all';
+      const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+      rows.forEach(row => {
+        const rowStatus = row.getAttribute('data-status') || '';
+        const rowBuilding = (row.getAttribute('data-building') || '').toLowerCase();
+        const rowType = (row.getAttribute('data-type') || '').toLowerCase();
+        const rowText = row.innerText.toLowerCase();
+
+        const matchStatus = (currentStatus === 'all') || (rowStatus === currentStatus);
+        const matchBuilding = (bFilter === 'all') || rowBuilding.includes(bFilter);
+        const matchType = (tFilter === 'all') || rowType.includes(tFilter);
+        const matchSearch = !q || rowText.includes(q);
+
+        if (matchStatus && matchBuilding && matchType && matchSearch) {
+          row.style.display = '';
+          visible++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      if (visibleCountSpan) {
+        visibleCountSpan.innerText = visible;
+      }
+    }
+
+    statusBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        statusBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        this.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        this.classList.add('bg-primary', 'text-on-primary');
+        currentStatus = this.getAttribute('data-filter') || 'all';
+        filterTable();
+      });
+    });
+
+    if (buildingSelect) buildingSelect.addEventListener('change', filterTable);
+    if (typeSelect) typeSelect.addEventListener('change', filterTable);
+    if (searchInput) searchInput.addEventListener('input', filterTable);
+  })();
+</script></main></div></body></html>
